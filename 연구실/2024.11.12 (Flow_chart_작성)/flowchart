@@ -1,0 +1,15 @@
+digraph {
+	node [shape=rectangle]
+	A [label="시작"]
+	B [label="온도 t 입력"]
+	C [label="t > 30?"]
+	D [label="날씨가 덥다."]
+	E [label="날씨가 덥지 않다."]
+	F [label="종료"]
+	A -> B
+	B -> C
+	C -> D [label="예"]
+	C -> E [label="아니요"]
+	D -> F
+	E -> F
+}
