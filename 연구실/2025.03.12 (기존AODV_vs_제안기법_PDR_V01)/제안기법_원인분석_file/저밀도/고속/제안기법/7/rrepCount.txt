@@ -1,0 +1,8 @@
+node[7]
+node[7]
+node[7]
+node[7]
+node[7]
+rsu[0]
+node[7]
+node[7]
