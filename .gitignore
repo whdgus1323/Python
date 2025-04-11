@@ -1,11 +1,14 @@
-# 실험 데이터 (GitHub에 절대 올라가지 않게 함)
+# 실험 데이터 전체 무시
 Experiment_data/
 
-# DVC 캐시 및 임시 파일 제외 (필수)
+# BUT: DVC 추적 정보는 Git에 추가되도록 허용
+!Experiment_data/**/*.dvc
+
+# DVC 캐시 및 임시 파일 제외
 .dvc/cache/
 .dvc/tmp/
 
-# DVC 관련 잠금파일만 제외 (선택)
+# DVC 잠금파일 무시 (필요시)
 *.dvc.lock
 
 # Jupyter Notebook
@@ -114,7 +117,7 @@ celerybeat.pid
 # SageMath
 *.sage.py
 
-# Environments
+# Virtual environments
 .env
 .venv
 env/
