@@ -1,0 +1,32 @@
+// AODV Dynamic Adjustment Mechanism
+digraph {
+	A [label=Start]
+	B [label="Receive RREQ"]
+	C [label="Measure Speed Change Rate
+(currentSpeed, prevSpeed)"]
+	D [label="Calculate Density Weight
+(weightedDensity, avgDensity)"]
+	E [label="Calculate Speed Weight
+(currentSpeed, avgSpeed)"]
+	F [label="Apply Interaction Factor
+(speedWeight, densityWeight)"]
+	G [label="Calculate Final Adjustment Factor
+(adjustedFactor)"]
+	H [label="Adjust myRouteTimeout and deletePeriod
+(myRouteTimeout, deletePeriod)"]
+	I [label="Log Data
+(speed, density, routeTimers)"]
+	J [label="Update Routing Table
+(routingTable)"]
+	K [label=End]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	H -> I
+	I -> J
+	J -> K
+}

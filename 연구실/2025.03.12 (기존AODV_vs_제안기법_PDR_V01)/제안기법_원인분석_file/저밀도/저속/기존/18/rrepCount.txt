@@ -1,6 +1,0 @@
-node[18]
-node[18]
-rsu[0]
-node[18]
-node[18]
-node[18]

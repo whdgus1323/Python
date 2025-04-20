@@ -1,6 +1,0 @@
-node[17]
-node[17]
-node[17]
-node[17]
-node[17]
-node[157]
