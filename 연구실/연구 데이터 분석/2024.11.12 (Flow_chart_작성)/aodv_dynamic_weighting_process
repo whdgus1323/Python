@@ -1,0 +1,27 @@
+// AODV Dynamic Weighting
+digraph {
+	rankdir=LR size="10,8"
+	A [label=Start]
+	B [label="Initialize base parameters"]
+	C [label="Measure vehicle speed"]
+	D [label="Measure vehicle density"]
+	E [label="Calculate speed weight"]
+	F [label="Calculate density weight"]
+	G [label="Calculate interaction factor"]
+	H [label="Calculate adjusted factor"]
+	I [label="Update myRouteTimeout"]
+	J [label="Update deletePeriod"]
+	K [label="Log results"]
+	L [label=End]
+	A -> B
+	B -> C
+	C -> D
+	D -> E
+	E -> F
+	F -> G
+	G -> H
+	H -> I
+	I -> J
+	J -> K
+	K -> L
+}
