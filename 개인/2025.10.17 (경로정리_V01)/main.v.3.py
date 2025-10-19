@@ -1,24 +1,24 @@
 # -*- coding: utf-8 -*-
 """
-Backup 트리 (Collapsed + Depth Columns) - V16
+Backup 트리 (Collapsed + Depth Columns) - V16 (GUI Auto-Run)
+- 실행 즉시 폴더 선택 창이 뜨고, 선택하면 바로 처리 시작
 - .h 폴더: 하위 미탐색, '원래이름 [Hiddle]' 로 한 줄만 표시
 - 박스문자(├──, └──, │) 트리
 - 엑셀 커넥터(├/└)를 열 폭에 맞춰 '─'로 패딩
-- 🔷 신규: "구조 시그니처"로 형제 폴더를 패턴 단위로 그룹핑(ParentOfUnit 동일 & 구조 동일 & 접두 동일)
+- 🔷 "구조 시그니처"로 형제 폴더를 패턴 단위로 그룹핑(ParentOfUnit 동일 & 구조 동일 & 접두 동일)
+- 결과: 선택한 root_dir 바로 아래에 _BackupTree_YYYYmmdd_HHMMSS.xlsx / _collapsed.txt 생성
 """
 
-import os, re, math
+import os, re, math, sys, threading, queue
 from datetime import datetime
 from typing import List, Dict, Any, Tuple, Set
 import pandas as pd
 
-# ===== 사용자 설정 =====
-root_dir = r"D:\연구실"
-save_basename = f"_BackupTree_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
-excel_path = os.path.join(root_dir, save_basename + ".xlsx")
-txt_collapsed_path = os.path.join(root_dir, save_basename + "_collapsed.txt")
+# ======= 사용자 기본 설정 (기능 변경 없음) =======
+CASE_SENSITIVE = False
+SQUASH_SPACES  = True
+ROW_LIMIT      = None
 
-# 무시 폴더/파일
 IGNORE_DIR_KEYWORDS = {
     "__pycache__", ".git", ".venv", "node_modules",
     "$recycle.bin", "system volume information"
@@ -32,11 +32,6 @@ IGNORE_FILE_EXTS = IGNORE_IMAGE_EXTS | IGNORE_MISC_FILE_EXTS
 
 MAIN_ROOT_PATTERN = re.compile(r"^Backup_\d{4}\.\d{2}\.\d{2}(\b|[^\\/]*)", re.IGNORECASE)
 
-CASE_SENSITIVE = False
-SQUASH_SPACES = True
-
-ROW_LIMIT = None
-
 # ======= Excel 표시 파라미터 (요청: 변경하지 않음) =======
 FONT_NAME = "Consolas"
 FONT_SIZE = 11
@@ -46,11 +41,11 @@ DEFAULT_LEVEL_WIDTH = 14
 LEVEL0_EXTRA_WIDTH = 12
 # ======================================================
 
-# ===== 유틸 =====
+# ======================= 유틸 =======================
 def human_size(nbytes: int) -> str:
     if not nbytes: return "0 B"
     units = ["B","KB","MB","GB","TB","PB"]
-    i = min(int(math.log(nbytes, 1024)), len(units)-1)
+    i = min(int(math.log(max(nbytes,1), 1024)), len(units)-1)
     return f"{round(nbytes/(1024**i), 2)} {units[i]}"
 
 def safe_stat(path: str):
@@ -102,23 +97,14 @@ def split_prefix_number(name: str) -> Tuple[str, int]:
     if not m: return None, None
     return m.group(1), int(m.group(2))
 
-# ----- .h 폴더 처리 -----
 def is_hiddle_folder(name: str) -> bool:
     return name.endswith(".h")
 
 def hiddle_label(name: str) -> str:
     return (name[:-2] + " [Hiddle]") if is_hiddle_folder(name) else name
 
-# ===== 0) 전체 트리 스캔: 파일/폴더 단위 데이터 수집 =====
+# ==================== 0) 전체 트리 스캔 ====================
 def scan_tree(root: str):
-    """
-    반환:
-      files_rows: 파일 단위 목록
-      units_rows: 폴더(단위) 목록
-        - UnitPath, ParentOfUnit, UnitName, FileSet(직접 파일 세트), FilesPerUnit
-        - NonNumChilds(비숫자 하위 폴더), NumGroups: {prefix:[numbers]}
-        - StructureSig: 구조 시그니처(파일세트 + 하위 폴더 패턴)
-    """
     files_rows: List[Dict[str, Any]] = []
     units_rows: List[Dict[str, Any]] = []
 
@@ -129,7 +115,6 @@ def scan_tree(root: str):
             return []
 
     def build_structure_signature(path: str, direct_files_norm: Tuple[str, ...], child_dirs: List[str]) -> str:
-        # 숫자/비숫자 분리
         nonnum = []
         num_map: Dict[str, List[int]] = {}
         for dn in child_dirs:
@@ -142,20 +127,18 @@ def scan_tree(root: str):
         num_parts = []
         for pre, nums in sorted(num_map.items()):
             num_parts.append(f"{pre}({compress_numbers(nums)})")
-        num_sig = "|".join(num_parts)
         files_sig = ",".join(direct_files_norm)
-        return f"files=[{files_sig}]::dirs_nonnum=[{','.join(nonnum_sorted)}]::dirs_num=[{num_sig}]"
+        return f"files=[{files_sig}]::dirs_nonnum=[{','.join(nonnum_sorted)}]::dirs_num=[{'|'.join(num_parts)}]"
 
     def dfs(path: str):
         base = os.path.basename(path)
-        # 폴더 단위: 직접 파일 목록
         direct_files = []
         child_dirs = []
         for ch in listdir_sorted(path):
             if ch.is_dir(follow_symlinks=False):
                 if is_ignored_dir(ch.name):
                     continue
-                child_dirs.append(ch.name)  # .h 폴더도 '존재'는 기록 (표시만 숨김)
+                child_dirs.append(ch.name)  # 존재는 기록
             else:
                 ext = norm_ext(ch.name)
                 if ext in IGNORE_FILE_EXTS:
@@ -179,25 +162,18 @@ def scan_tree(root: str):
             "FileSet": file_set,
             "FilesPerUnit": len(file_set),
             "NonNumChilds": tuple(sorted({n for n in child_dirs if split_prefix_number(n) == (None, None)})),
-            "NumGroups": {pre: sorted(nums) for pre, nums in
-                          sorted({(split_prefix_number(n)[0] or ''): [] for n in child_dirs}.items())
-                          if pre != ''}  # dummy init; 실제 아래서 덮어씀
+            "NumGroups": {}
         })
-        # NumGroups 보정
         pre_map: Dict[str, List[int]] = {}
         for dn in child_dirs:
             pre, num = split_prefix_number(dn)
             if pre is not None and num is not None:
                 pre_map.setdefault(pre, []).append(num)
         units_rows[-1]["NumGroups"] = {k: sorted(v) for k, v in pre_map.items()}
-
-        # 구조 시그니처
         units_rows[-1]["StructureSig"] = build_structure_signature(path, file_set, child_dirs)
 
-        # .h 폴더는 하위 미탐색
-        if is_hiddle_folder(base):
+        if is_hiddle_folder(base):  # .h 폴더는 미탐색
             return
-        # 하위 탐색 (단, .h 폴더는 들어가지 않음)
         for ch in listdir_sorted(path):
             if ch.is_dir(follow_symlinks=False):
                 if is_ignored_dir(ch.name) or is_hiddle_folder(ch.name):
@@ -207,7 +183,7 @@ def scan_tree(root: str):
     dfs(root)
     return files_rows, units_rows
 
-# ===== 1) 패턴 그룹 탐지 (폴더 구조 기반) =====
+# ============== 1) 패턴 그룹 탐지 (구조 기반) ==============
 def detect_groups_by_structure(root: str):
     files_rows, units_rows = scan_tree(root)
     df_units = pd.DataFrame(units_rows)
@@ -215,10 +191,8 @@ def detect_groups_by_structure(root: str):
         return pd.DataFrame(), pd.DataFrame()
 
     df_units["MainRoot"] = os.path.basename(root)
-    # 접두/번호
     df_units[["Prefix","Number"]] = df_units["UnitName"].apply(lambda n: pd.Series(split_prefix_number(n)))
 
-    # 같은 부모 아래에서 구조 시그니처가 같고 접두가 같은 것들을 묶음
     grouped = (
         df_units.groupby(["MainRoot","ParentOfUnit","StructureSig","Prefix"], dropna=False)
         .agg(
@@ -231,7 +205,6 @@ def detect_groups_by_structure(root: str):
         .reset_index()
     )
 
-    # 라벨
     def units_label(prefix, numbers, names):
         if pd.notna(prefix) and numbers:
             return f"{prefix}({compress_numbers(numbers)})"
@@ -243,7 +216,6 @@ def detect_groups_by_structure(root: str):
     grouped["FileList"] = grouped["StructureSig"].apply(lambda s: s.split("::")[0].replace("files=[","").replace("]",""))
     grouped = grouped[grouped["UnitCount"] >= 2].copy()
 
-    # PatternID
     grouped = grouped.sort_values(["ParentOfUnit","UnitCount"], ascending=[True, False])
     grouped["PatternID"] = (
         grouped.groupby("MainRoot").cumcount().add(1).astype(str)
@@ -251,7 +223,7 @@ def detect_groups_by_structure(root: str):
     )
     return grouped.reset_index(drop=True), df_units.reset_index(drop=True)
 
-# ===== 2) Collapsed Tree 생성 (그룹 멤버 숨김) =====
+# ============== 2) Collapsed Tree ==============
 def make_collapsed_rows(root: str, grouped: pd.DataFrame) -> List[Dict[str, Any]]:
     rows: List[Dict[str, Any]] = []
     if grouped is None or not isinstance(grouped, pd.DataFrame) or grouped.empty:
@@ -284,7 +256,6 @@ def make_collapsed_rows(root: str, grouped: pd.DataFrame) -> List[Dict[str, Any]
         if is_hiddle_folder(base):
             return
 
-        # 그룹 요약 출력
         groups = parent_to_groups.get(path, [])
         if groups:
             for g in groups:
@@ -293,18 +264,16 @@ def make_collapsed_rows(root: str, grouped: pd.DataFrame) -> List[Dict[str, Any]
                     "Parts": cur_parts[:] + [label],
                     "Kind": "Group",
                     "Name": g["UnitsLabel"],
-                    "Extra": ""  # 구조 요약이라 파일세트는 생략
+                    "Extra": ""
                 })
                 if ROW_LIMIT and len(rows) >= ROW_LIMIT:
                     return
 
-        # 일반 자식
         for ch in listdir_sorted(path):
             if ch.is_dir(follow_symlinks=False):
                 if is_ignored_dir(ch.name):
                     continue
                 if ch.path in grouped_member_paths:
-                    # 그룹 멤버는 숨김
                     continue
                 if is_hiddle_folder(ch.name):
                     label = hiddle_label(ch.name)
@@ -332,7 +301,7 @@ def make_collapsed_rows(root: str, grouped: pd.DataFrame) -> List[Dict[str, Any]
     dfs(root, [os.path.basename(root)])
     return rows
 
-# ===== 3) 박스문자 트리(├──/└──/│) 매트릭스 =====
+# ============== 3) 박스문자 트리 매트릭스 ==============
 def build_box_matrix(df_paths: pd.DataFrame, level_cols: List[str]) -> pd.DataFrame:
     paths = [[r[c] for c in level_cols if r[c]] for _, r in df_paths.iterrows()]
     out = []
@@ -354,11 +323,8 @@ def build_box_matrix(df_paths: pd.DataFrame, level_cols: List[str]) -> pd.DataFr
                 if p2 != parts:
                     has_next = True
                     break
-
-            # 마지막 자식이면 └──, 그렇지 않으면 ├──
             connector = "├" if has_next else "└"
             vis[level_cols[k-1]] = connector
-
         for a in range(0, max(0, k-1)):
             ancestor = tuple(parts[:a+1])
             vertical = False
@@ -374,7 +340,7 @@ def build_box_matrix(df_paths: pd.DataFrame, level_cols: List[str]) -> pd.DataFr
         out.append({**vis, "Kind": r["Kind"], "MainRoot": r["MainRoot"], "Extra": r["Extra"]})
     return pd.DataFrame(out, columns=level_cols + ["Kind","MainRoot","Extra"])
 
-# ===== 4) 커넥터 가로선 패딩 =====
+# ============== 4) 커넥터 가로선 패딩 ==============
 def pad_connectors_to_width(ws, level_col_count: int, margin_chars: int = 1):
     from openpyxl.utils import get_column_letter
     target_len = {}
@@ -388,55 +354,16 @@ def pad_connectors_to_width(ws, level_col_count: int, margin_chars: int = 1):
             if cell.value is None: continue
             s = str(cell.value)
             if not s: continue
-            if s[0] in ("├", "└", "├"):  # ├,└
+            if s and s[0] in ("├", "└"):
                 head = s[0]
                 cell.value = head + ("─" * max(0, target_len[c] - 1))
 
-# ===== 메인 =====
-def main():
-    main_roots = find_main_roots(root_dir)
+# ============== 저장 (엑셀/텍스트) ==============
+def save_outputs(root_dir: str, df_paths: pd.DataFrame, level_cols: List[str],
+                 all_summaries, all_members, excel_basename: str):
+    excel_path = os.path.join(root_dir, excel_basename + ".xlsx")
+    txt_collapsed_path = os.path.join(root_dir, excel_basename + "_collapsed.txt")
 
-    all_rows: List[Dict[str, Any]] = []
-    all_summaries: List[pd.DataFrame] = []
-    all_members: List[pd.DataFrame] = []
-
-    for mr in main_roots:
-        grouped, units_df = detect_groups_by_structure(mr)
-        collapsed = make_collapsed_rows(mr, grouped)
-        for r in collapsed:
-            r["MainRoot"] = os.path.basename(mr)
-        all_rows.extend(collapsed)
-        if not grouped.empty:
-            all_summaries.append(grouped.assign(MainRoot=os.path.basename(mr)))
-            # 멤버 표: 그룹별 실제 폴더 멤버
-            mem_rows = []
-            for _, g in grouped.iterrows():
-                for uname, pth in zip(g["UnitNames"], g["Parents"]):
-                    mem_rows.append({
-                        "PatternID": g["PatternID"],
-                        "MainRoot": g["MainRoot"],
-                        "ParentPath": pth,
-                        "UnitName": uname,
-                        "FilesPerUnit": g["FilesPerUnit"],
-                        "UnitsLabel": g["UnitsLabel"],
-                        "ParentOfUnit": g["ParentOfUnit"]
-                    })
-            all_members.append(pd.DataFrame(mem_rows))
-
-    if not all_rows:
-        print("No rows found.")
-        return
-
-    df = pd.DataFrame(all_rows)
-    max_depth = max(len(p) for p in df["Parts"])
-    for i in range(max_depth):
-        df[f"Level{i}"] = df["Parts"].apply(lambda p, i=i: p[i] if i < len(p) else "")
-    level_cols = [f"Level{i}" for i in range(max_depth)]
-    df_paths = df[level_cols + ["Kind","MainRoot","Extra"]].copy()
-
-    df_excel = build_box_matrix(df_paths, level_cols)
-
-    # 요약/멤버
     df_summary = pd.concat(all_summaries, ignore_index=True) if all_summaries else pd.DataFrame(
         columns=["PatternID","MainRoot","ParentOfUnit","StructureSig","Prefix",
                  "UnitCount","FilesPerUnit","UnitNames","Numbers","Parents","UnitsLabel","FileList"]
@@ -445,11 +372,10 @@ def main():
         columns=["PatternID","MainRoot","ParentPath","UnitName","FilesPerUnit","ParentOfUnit","UnitsLabel"]
     )
 
-    # ===== Excel 저장 =====
     with pd.ExcelWriter(excel_path, engine="openpyxl") as w:
+        df_excel = build_box_matrix(df_paths, level_cols)
         df_excel.to_excel(w, index=False, sheet_name="Tree_Collapsed")
 
-        # 한 컬럼 뷰(간단)
         tree_rows = []
         for _, r in df_paths.iterrows():
             parts = [r[c] for c in level_cols if r[c]]
@@ -467,7 +393,6 @@ def main():
         if not df_members.empty:
             df_members.to_excel(w, index=False, sheet_name="PatternMembers")
 
-        # --- 스타일 ---
         from openpyxl.utils import get_column_letter
         from openpyxl.styles import Font, Alignment
         wb = w.book
@@ -496,17 +421,17 @@ def main():
         if "PatternSummary" in wb.sheetnames: style_ws(wb["PatternSummary"])
         if "PatternMembers" in wb.sheetnames: style_ws(wb["PatternMembers"])
 
-        # ─ 패딩
         ws_tc = wb["Tree_Collapsed"]
         level_col_count = sum(1 for c in ws_tc[1] if str(c.value).startswith("Level"))
         pad_connectors_to_width(ws_tc, level_col_count, margin_chars=1)
 
-    # ===== TXT =====
+    # TXT
     try:
         with open(txt_collapsed_path, "w", encoding="utf-8") as f:
             last_root = None
             for _, r in df_paths.iterrows():
-                parts = [r[c] for c in level_cols if r[c]]
+                part_cols = [c for c in df_paths.columns if c.startswith("Level")]
+                parts = [r[c] for c in part_cols if r[c]]
                 if not parts: continue
                 if parts[0] != last_root:
                     last_root = parts[0]
@@ -518,8 +443,150 @@ def main():
     except Exception as e:
         print("TXT write skipped:", e)
 
-    print(f"✅ Excel saved: {excel_path}")
-    print(f"✅ Collapsed text saved: {txt_collapsed_path}")
+    return excel_path, txt_collapsed_path
 
+# ============== 메인 파이프라인 ==============
+def run_backup_tree(root_dir: str, log=print):
+    if not root_dir or not os.path.isdir(root_dir):
+        raise ValueError("유효한 root_dir 폴더를 선택/입력하세요.")
+
+    save_basename = f"_BackupTree_{datetime.now().strftime('%Y%m%d_%H%M%S')}"
+    log(f"[1/5] Main roots 탐색: {root_dir}")
+    main_roots = find_main_roots(root_dir)
+
+    all_rows: List[Dict[str, Any]] = []
+    all_summaries: List[pd.DataFrame] = []
+    all_members: List[pd.DataFrame] = []
+
+    for mr in main_roots:
+        log(f"  - 스캔: {mr}")
+        grouped, _ = detect_groups_by_structure(mr)
+        collapsed = make_collapsed_rows(mr, grouped)
+        for r in collapsed:
+            r["MainRoot"] = os.path.basename(mr)
+        all_rows.extend(collapsed)
+
+        if isinstance(grouped, pd.DataFrame) and not grouped.empty:
+            all_summaries.append(grouped.assign(MainRoot=os.path.basename(mr)))
+            mem_rows = []
+            for _, g in grouped.iterrows():
+                for uname, pth in zip(g["UnitNames"], g["Parents"]):
+                    mem_rows.append({
+                        "PatternID": g["PatternID"],
+                        "MainRoot": g["MainRoot"],
+                        "ParentPath": pth,
+                        "UnitName": uname,
+                        "FilesPerUnit": g["FilesPerUnit"],
+                        "UnitsLabel": g["UnitsLabel"],
+                        "ParentOfUnit": g["ParentOfUnit"]
+                    })
+            all_members.append(pd.DataFrame(mem_rows))
+
+    if not all_rows:
+        raise RuntimeError("스캔 결과가 없습니다.")
+
+    df = pd.DataFrame(all_rows)
+    max_depth = max(len(p) for p in df["Parts"])
+    for i in range(max_depth):
+        df[f"Level{i}"] = df["Parts"].apply(lambda p, i=i: p[i] if i < len(p) else "")
+    level_cols = [f"Level{i}" for i in range(max_depth)]
+    df_paths = df[level_cols + ["Kind","MainRoot","Extra"]].copy()
+
+    log("[2/5] 엑셀 시트 구성…")
+    log("[3/5] 파일 저장…")
+    excel_path, txt_path = save_outputs(root_dir, df_paths, level_cols, all_summaries, all_members, save_basename)
+
+    log("[4/5] 완료 경로:")
+    log(f"    - Excel : {excel_path}")
+    log(f"    - TXT   : {txt_path}")
+    log("[5/5] 작업 완료 ✅")
+    return excel_path, txt_path
+
+# ============================ GUI (자동 실행) ============================
+def launch_and_run():
+    import tkinter as tk
+    from tkinter import ttk, filedialog, messagebox
+
+    class App:
+        def __init__(self, master):
+            self.master = master
+            master.title("Backup Tree (V16)")
+            master.geometry("760x480")
+            self.q = queue.Queue()
+            self.worker = None
+
+            # 로그 창
+            frm_log = ttk.LabelFrame(master, text="Log")
+            frm_log.pack(fill="both", expand=True, padx=10, pady=10)
+            self.txt = tk.Text(frm_log, height=20, wrap="word")
+            self.txt.pack(fill="both", expand=True)
+
+            self.progress = ttk.Progressbar(master, mode="indeterminate")
+            self.progress.pack(fill="x", padx=10, pady=(0,10))
+
+            master.after(200, self.ask_and_run)
+            master.after(100, self.poll_queue)
+            master.protocol("WM_DELETE_WINDOW", self.on_close)
+
+        def log(self, msg: str):
+            self.q.put(("log", msg))
+
+        def poll_queue(self):
+            try:
+                while True:
+                    kind, payload = self.q.get_nowait()
+                    if kind == "log":
+                        self.txt.insert("end", payload + "\n")
+                        self.txt.see("end")
+                    elif kind == "done":
+                        self.progress.stop()
+                        excel, txt = payload
+                        messagebox.showinfo("완료", f"작업 완료!\n\nExcel:\n{excel}\n\nTXT:\n{txt}")
+                    elif kind == "error":
+                        self.progress.stop()
+                        messagebox.showerror("오류", str(payload))
+                    self.q.task_done()
+            except queue.Empty:
+                pass
+            self.master.after(100, self.poll_queue)
+
+        def ask_and_run(self):
+            d = filedialog.askdirectory(title="Select Root Directory")
+            if not d:
+                self.master.destroy()
+                return
+            self.progress.start(12)
+            def job():
+                try:
+                    def gui_log(*a):
+                        self.log(" ".join(str(x) for x in a))
+                    excel_path, txt_path = run_backup_tree(d, log=gui_log)
+                    self.q.put(("done", (excel_path, txt_path)))
+                except Exception as e:
+                    self.q.put(("error", e))
+            self.worker = threading.Thread(target=job, daemon=True)
+            self.worker.start()
+
+        def on_close(self):
+            self.master.destroy()
+
+    # DPI 보정(Windows)
+    try:
+        if sys.platform.startswith("win"):
+            from ctypes import windll
+            windll.shcore.SetProcessDpiAwareness(1)
+    except Exception:
+        pass
+
+    root = tk.Tk()
+    App(root)
+    root.mainloop()
+
+# ========================== 실행 진입점 ==========================
 if __name__ == "__main__":
-    main()
+    if len(sys.argv) > 1:
+        root_dir = sys.argv[1]
+        print(f"CLI: {root_dir}")
+        run_backup_tree(root_dir)
+    else:
+        launch_and_run()
