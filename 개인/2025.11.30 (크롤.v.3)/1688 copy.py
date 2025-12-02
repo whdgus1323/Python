@@ -4,7 +4,6 @@ import os
 import sys
 import threading
 import queue
-import json
 import requests
 import pandas as pd
 import tkinter as tk
@@ -18,6 +17,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 from openpyxl import load_workbook
 from openpyxl.styles import Font
+from bs4 import BeautifulSoup
 
 USERNAME = "tb548563353414"
 PASSWORD = "zxc@73026181"
@@ -61,7 +61,6 @@ def clean_price_from_card_text(text: str) -> str:
     if not isinstance(text, str):
         return ""
     lines = [l.strip() for l in text.splitlines() if l.strip()]
-
     if "¥" in lines:
         idx = lines.index("¥")
         parts = []
@@ -73,7 +72,6 @@ def clean_price_from_card_text(text: str) -> str:
         if parts:
             price = "¥" + "".join(parts)
             return price.replace(" ", "")
-
     m = re.search(r"¥\s*([0-9.]+)", text)
     if m:
         return "¥" + m.group(1)
@@ -105,23 +103,17 @@ def login_1688(driver):
     log(f"[DEBUG] 로그인 페이지 접속: {LOGIN_URL}")
     driver.get(LOGIN_URL)
     wait = WebDriverWait(driver, 20)
-
-    id_input = wait.until(EC.presence_of_element_located(
-        (By.XPATH, "//input[contains(@placeholder,'账号名') or contains(@placeholder,'邮箱') or contains(@placeholder,'手机号')]")
-    ))
+    id_input = wait.until(EC.presence_of_element_located((By.XPATH, "//input[contains(@placeholder,'账号名') or contains(@placeholder,'邮箱') or contains(@placeholder,'手机号')]")))
     id_input.clear()
     id_input.send_keys(USERNAME)
     log("[DEBUG] 아이디 입력 완료")
-
     pw_input = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@type='password']")))
     pw_input.clear()
     pw_input.send_keys(PASSWORD)
     log("[DEBUG] 비밀번호 입력 완료")
-
     login_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(),'登录')]")))
     login_btn.click()
     log("[DEBUG] 로그인 버튼 클릭")
-
     time.sleep(5)
     log(f"[DEBUG] 로그인 후 URL: {driver.current_url}")
     log(f"[DEBUG] 로그인 후 TITLE: {driver.title}")
@@ -158,12 +150,7 @@ def collect_cards(driver):
         offer_id = extract_offer_id(href)
         name_raw = raw.split("\n")[0] if raw else ""
         price_raw = clean_price_from_card_text(raw)
-        products.append({
-            "name_raw": name_raw,
-            "price_raw": price_raw,
-            "url": href,
-            "offer_id": offer_id
-        })
+        products.append({"name_raw": name_raw, "price_raw": price_raw, "url": href, "offer_id": offer_id})
     return products
 
 
@@ -231,45 +218,41 @@ def parse_price_cny(price_raw: str) -> float:
         return 0.0
 
 
-def fetch_detail_attributes(session: requests.Session, offer_id: str):
-    attrs = {}
-    if not offer_id:
-        return attrs
-
-    detail_url = f"https://detail.1688.com/offer/{offer_id}.html"
-    log(f"[DEBUG] 상세페이지(PC) 요청: {detail_url}")
-
-    r = session.get(detail_url, timeout=10)
-    r.raise_for_status()
-    html = r.text
-
-    m = re.search(r'"skuProps":(\[.*?\])', html, re.S)
-    if not m:
-        return attrs
-
-    sku_props_raw = m.group(1)
+def fetch_detail_attributes(session: requests.Session, url: str) -> dict:
     try:
-        sku_props = json.loads(sku_props_raw)
+        log(f"[DEBUG] 상세페이지 요청: {url}")
+        r = session.get(url, timeout=15)
+        r.raise_for_status()
+        html = r.text
     except Exception as e:
-        log(f"[WARN] skuProps JSON 파싱 실패 offer_id={offer_id}: {e}")
-        return attrs
-
-    colors = []
-    for prop in sku_props:
-        prop_name = str(prop.get("prop", ""))
-        if ("颜色" in prop_name) or ("색" in prop_name) or ("色" in prop_name):
-            for v in prop.get("value", []):
-                name = v.get("name")
-                if name:
-                    colors.append(str(name))
-
-    if colors:
-        colors = sorted(set(colors))
-        color_str = "/".join(colors)
-        attrs["색상"] = color_str
-        log(f"[DEBUG] 색상 파싱 완료 offer_id={offer_id}: {color_str}")
-
-    attrs["원본속성JSON"] = sku_props_raw
+        log(f"[WARN] 상세페이지 요청 실패: {e}")
+        return {}
+    try:
+        soup = BeautifulSoup(html, "html.parser")
+    except Exception as e:
+        log(f"[WARN] 상세페이지 파싱 실패: {e}")
+        return {}
+    heading = soup.find(string=lambda t: isinstance(t, str) and "제품 속성" in t)
+    if not heading:
+        return {}
+    parent = heading.find_parent()
+    if not parent:
+        return {}
+    table = parent.find_next("table")
+    if not table:
+        return {}
+    attrs = {}
+    for tr in table.find_all("tr"):
+        cells = tr.find_all(["th", "td"])
+        if len(cells) < 2:
+            continue
+        for i in (0, 2):
+            if i >= len(cells) - 1:
+                continue
+            key = cells[i].get_text(" ", strip=True).strip().rstrip(":")
+            val = cells[i + 1].get_text(" ", strip=True)
+            if key:
+                attrs[key] = val
     return attrs
 
 
@@ -304,35 +287,18 @@ def run_crawler(keywords, scroll_times, output_file):
     total = len(all_products)
     for idx, (p, name_ko) in enumerate(zip(all_products, names_ko), start=1):
         log(f"[DEBUG] 상세정보 포함 행 생성 {idx}/{total}")
-        detail_attrs = {}
-        offer_id = p.get("offer_id")
-        if offer_id:
-            try:
-                detail_attrs = fetch_detail_attributes(http_session, offer_id)
-            except Exception as e:
-                log(f"[WARN] 상세정보 파싱 실패 offer_id={offer_id}: {e}")
-                detail_attrs = {}
-
         price_cny = parse_price_cny(p["price_raw"])
         price_krw = int(round(price_cny * rate_cny_krw))
-
-        if price_krw > 0:
-            supply_coupang = int(round(price_krw * 2.03)) 
-            sale_price = int(round(supply_coupang * 1.9))
-        else:
-            supply_coupang = 0
-            sale_price = 0
-
+        detail_attrs = fetch_detail_attributes(http_session, p["url"])
         row = {
             "검색어": p.get("keyword", ""),
             "상품명": name_ko,
             "공급가(원)": price_krw,
-            "공급가(쿠팡)": supply_coupang,
-            "판매가": sale_price,
             "링크": p["url"],
         }
         row.update(detail_attrs)
         rows.append(row)
+        time.sleep(0.5)
 
     df = pd.DataFrame(rows)
     df.to_excel(output_file, index=False)
@@ -341,15 +307,14 @@ def run_crawler(keywords, scroll_times, output_file):
     wb = load_workbook(output_file)
     ws = wb.active
     cols = list(df.columns)
-    link_col_idx = cols.index("링크") + 1
-
-    for row in range(2, ws.max_row + 1):
-        cell = ws.cell(row=row, column=link_col_idx)
-        link = cell.value
-        if link:
-            cell.hyperlink = link
-            cell.font = Font(color="0000FF", underline="single")
-
+    if "링크" in cols:
+        link_col_idx = cols.index("링크") + 1
+        for row_idx in range(2, ws.max_row + 1):
+            cell = ws.cell(row=row_idx, column=link_col_idx)
+            link = cell.value
+            if link:
+                cell.hyperlink = link
+                cell.font = Font(color="0000FF", underline="single")
     wb.save(output_file)
     log(f"[DEBUG] 최종 저장 완료: {output_file}")
     return True
@@ -435,11 +400,7 @@ def on_run():
     log(f"[DEBUG] 출력 파일 경로: {output_file}")
 
     btn_run.config(state="disabled")
-    t = threading.Thread(
-        target=run_crawler_thread,
-        args=(keywords, scroll_times, output_file, dir_path),
-        daemon=True
-    )
+    t = threading.Thread(target=run_crawler_thread, args=(keywords, scroll_times, output_file, dir_path), daemon=True)
     t.start()
 
 
@@ -530,12 +491,7 @@ header_frame.columnconfigure(0, weight=1)
 title_label = ttk.Label(header_frame, text="1688 상품 크롤링", style="Header.TLabel")
 title_label.grid(row=0, column=0, sticky="w")
 
-subtitle = ttk.Label(
-    header_frame,
-    text="키워드별 상품 정보 크롤링 후 Papago로 번역하고, 원화 기준 공급가를 계산 (로그인 시 슬라이드 수동)",
-    style="Header.TLabel",
-    font=(font_family_main, 9)
-)
+subtitle = ttk.Label(header_frame, text="키워드별 상품 정보 크롤링 후 Papago로 번역하고, 원화 기준 공급가를 계산 (로그인 시 슬라이드 수동)", style="Header.TLabel", font=(font_family_main, 9))
 subtitle.configure(foreground="#9CA3AF", background="#111827")
 subtitle.grid(row=1, column=0, sticky="w", pady=(2, 0))
 
@@ -594,17 +550,7 @@ right_frame.columnconfigure(0, weight=1)
 log_title = ttk.Label(right_frame, text="DEBUG 로그", font=(font_family_main, 10, "bold"))
 log_title.grid(row=0, column=0, sticky="w", pady=(0, 4))
 
-log_widget = tk.Text(
-    right_frame,
-    wrap="none",
-    width=60,
-    height=25,
-    bg="#020617",
-    fg="#E5E7EB",
-    insertbackground="#E5E7EB",
-    relief="flat",
-    borderwidth=0
-)
+log_widget = tk.Text(right_frame, wrap="none", width=60, height=25, bg="#020617", fg="#E5E7EB", insertbackground="#E5E7EB", relief="flat", borderwidth=0)
 log_widget.configure(font=(font_family_main, 10))
 log_widget.grid(row=1, column=0, sticky="nsew")
 

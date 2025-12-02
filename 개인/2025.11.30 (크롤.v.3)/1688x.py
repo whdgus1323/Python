@@ -4,7 +4,6 @@ import os
 import sys
 import threading
 import queue
-import json
 import requests
 import pandas as pd
 import tkinter as tk
@@ -61,7 +60,6 @@ def clean_price_from_card_text(text: str) -> str:
     if not isinstance(text, str):
         return ""
     lines = [l.strip() for l in text.splitlines() if l.strip()]
-
     if "¥" in lines:
         idx = lines.index("¥")
         parts = []
@@ -73,7 +71,6 @@ def clean_price_from_card_text(text: str) -> str:
         if parts:
             price = "¥" + "".join(parts)
             return price.replace(" ", "")
-
     m = re.search(r"¥\s*([0-9.]+)", text)
     if m:
         return "¥" + m.group(1)
@@ -105,23 +102,17 @@ def login_1688(driver):
     log(f"[DEBUG] 로그인 페이지 접속: {LOGIN_URL}")
     driver.get(LOGIN_URL)
     wait = WebDriverWait(driver, 20)
-
-    id_input = wait.until(EC.presence_of_element_located(
-        (By.XPATH, "//input[contains(@placeholder,'账号名') or contains(@placeholder,'邮箱') or contains(@placeholder,'手机号')]")
-    ))
+    id_input = wait.until(EC.presence_of_element_located((By.XPATH, "//input[contains(@placeholder,'账号名') or contains(@placeholder,'邮箱') or contains(@placeholder,'手机号')]")))
     id_input.clear()
     id_input.send_keys(USERNAME)
     log("[DEBUG] 아이디 입력 완료")
-
     pw_input = wait.until(EC.presence_of_element_located((By.XPATH, "//input[@type='password']")))
     pw_input.clear()
     pw_input.send_keys(PASSWORD)
     log("[DEBUG] 비밀번호 입력 완료")
-
     login_btn = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(),'登录')]")))
     login_btn.click()
     log("[DEBUG] 로그인 버튼 클릭")
-
     time.sleep(5)
     log(f"[DEBUG] 로그인 후 URL: {driver.current_url}")
     log(f"[DEBUG] 로그인 후 TITLE: {driver.title}")
@@ -129,8 +120,7 @@ def login_1688(driver):
 
 def go_search_page(driver, keyword):
     from urllib.parse import quote_plus
-    encoded = quote_plus(keyword, encoding="gbk", errors="ignore")
-    url = SEARCH_URL_TEMPLATE.format(keyword=encoded)
+    url = SEARCH_URL_TEMPLATE.format(keyword=quote_plus(keyword))
     log(f"[DEBUG] 검색 URL: {url}")
     driver.get(url)
     time.sleep(5)
@@ -158,12 +148,7 @@ def collect_cards(driver):
         offer_id = extract_offer_id(href)
         name_raw = raw.split("\n")[0] if raw else ""
         price_raw = clean_price_from_card_text(raw)
-        products.append({
-            "name_raw": name_raw,
-            "price_raw": price_raw,
-            "url": href,
-            "offer_id": offer_id
-        })
+        products.append({"name_raw": name_raw, "price_raw": price_raw, "url": href, "offer_id": offer_id})
     return products
 
 
@@ -231,48 +216,6 @@ def parse_price_cny(price_raw: str) -> float:
         return 0.0
 
 
-def fetch_detail_attributes(session: requests.Session, offer_id: str):
-    attrs = {}
-    if not offer_id:
-        return attrs
-
-    detail_url = f"https://detail.1688.com/offer/{offer_id}.html"
-    log(f"[DEBUG] 상세페이지(PC) 요청: {detail_url}")
-
-    r = session.get(detail_url, timeout=10)
-    r.raise_for_status()
-    html = r.text
-
-    m = re.search(r'"skuProps":(\[.*?\])', html, re.S)
-    if not m:
-        return attrs
-
-    sku_props_raw = m.group(1)
-    try:
-        sku_props = json.loads(sku_props_raw)
-    except Exception as e:
-        log(f"[WARN] skuProps JSON 파싱 실패 offer_id={offer_id}: {e}")
-        return attrs
-
-    colors = []
-    for prop in sku_props:
-        prop_name = str(prop.get("prop", ""))
-        if ("颜色" in prop_name) or ("색" in prop_name) or ("色" in prop_name):
-            for v in prop.get("value", []):
-                name = v.get("name")
-                if name:
-                    colors.append(str(name))
-
-    if colors:
-        colors = sorted(set(colors))
-        color_str = "/".join(colors)
-        attrs["색상"] = color_str
-        log(f"[DEBUG] 색상 파싱 완료 offer_id={offer_id}: {color_str}")
-
-    attrs["원본속성JSON"] = sku_props_raw
-    return attrs
-
-
 def run_crawler(keywords, scroll_times, output_file):
     driver = create_driver()
     all_products = []
@@ -301,38 +244,10 @@ def run_crawler(keywords, scroll_times, output_file):
     names_ko = translate_list(names_cn, http_session)
 
     rows = []
-    total = len(all_products)
-    for idx, (p, name_ko) in enumerate(zip(all_products, names_ko), start=1):
-        log(f"[DEBUG] 상세정보 포함 행 생성 {idx}/{total}")
-        detail_attrs = {}
-        offer_id = p.get("offer_id")
-        if offer_id:
-            try:
-                detail_attrs = fetch_detail_attributes(http_session, offer_id)
-            except Exception as e:
-                log(f"[WARN] 상세정보 파싱 실패 offer_id={offer_id}: {e}")
-                detail_attrs = {}
-
+    for p, name_ko in zip(all_products, names_ko):
         price_cny = parse_price_cny(p["price_raw"])
         price_krw = int(round(price_cny * rate_cny_krw))
-
-        if price_krw > 0:
-            supply_coupang = int(round(price_krw * 2.03)) 
-            sale_price = int(round(supply_coupang * 1.9))
-        else:
-            supply_coupang = 0
-            sale_price = 0
-
-        row = {
-            "검색어": p.get("keyword", ""),
-            "상품명": name_ko,
-            "공급가(원)": price_krw,
-            "공급가(쿠팡)": supply_coupang,
-            "판매가": sale_price,
-            "링크": p["url"],
-        }
-        row.update(detail_attrs)
-        rows.append(row)
+        rows.append({"검색어": p.get("keyword", ""), "상품명": name_ko, "공급가(원)": price_krw, "링크": p["url"]})
 
     df = pd.DataFrame(rows)
     df.to_excel(output_file, index=False)
@@ -392,20 +307,8 @@ def save_last_dir(path):
         pass
 
 
-def paste_keywords(event=None):
-    try:
-        text = root.clipboard_get()
-    except tk.TclError:
-        return "break"
-    entry_keywords.delete(0, tk.END)
-    entry_keywords.insert(0, text)
-    log(f"[DEBUG] 붙여넣기 텍스트: {repr(text)}")
-    return "break"
-
-
 def on_run():
     raw_keywords = entry_keywords.get().strip()
-    log(f"[DEBUG] on_run 키워드(raw): {repr(raw_keywords)}")
     scroll_str = entry_scroll.get().strip()
     if not raw_keywords:
         messagebox.showerror("오류", "상품 키워드를 입력하세요. 예: glass,cup,bottle")
@@ -435,11 +338,7 @@ def on_run():
     log(f"[DEBUG] 출력 파일 경로: {output_file}")
 
     btn_run.config(state="disabled")
-    t = threading.Thread(
-        target=run_crawler_thread,
-        args=(keywords, scroll_times, output_file, dir_path),
-        daemon=True
-    )
+    t = threading.Thread(target=run_crawler_thread, args=(keywords, scroll_times, output_file, dir_path), daemon=True)
     t.start()
 
 
@@ -495,19 +394,14 @@ try:
 except:
     pass
 
-font_family_main = "Microsoft YaHei UI"
-
 default_font = tkfont.nametofont("TkDefaultFont")
-try:
-    default_font.configure(family=font_family_main, size=10)
-except tk.TclError:
-    default_font.configure(size=10)
+default_font.configure(family="Segoe UI", size=10)
 root.option_add("*Font", default_font)
 
 style.configure("Main.TFrame", background="#111827")
 style.configure("Card.TFrame", background="#1F2933", borderwidth=0, relief="flat")
 style.configure("TLabel", background="#1F2933", foreground="#E5E7EB")
-style.configure("Header.TLabel", background="#111827", foreground="#F9FAFB", font=(font_family_main, 14))
+style.configure("Header.TLabel", background="#111827", foreground="#F9FAFB", font=("Segoe UI Semibold", 14))
 style.configure("Accent.TButton", background="#3B82F6", foreground="#FFFFFF", borderwidth=0, focusthickness=0, padding=(12, 6))
 style.map("Accent.TButton", background=[("active", "#2563EB"), ("disabled", "#4B5563")])
 style.configure("TEntry", fieldbackground="#111827", foreground="#F9FAFB")
@@ -530,12 +424,7 @@ header_frame.columnconfigure(0, weight=1)
 title_label = ttk.Label(header_frame, text="1688 상품 크롤링", style="Header.TLabel")
 title_label.grid(row=0, column=0, sticky="w")
 
-subtitle = ttk.Label(
-    header_frame,
-    text="키워드별 상품 정보 크롤링 후 Papago로 번역하고, 원화 기준 공급가를 계산 (로그인 시 슬라이드 수동)",
-    style="Header.TLabel",
-    font=(font_family_main, 9)
-)
+subtitle = ttk.Label(header_frame, text="키워드별 상품 정보 크롤링 후 Papago로 번역하고, 원화 기준 공급가를 계산 (로그인 시 슬라이드 수동)", style="Header.TLabel", font=("Segoe UI", 9))
 subtitle.configure(foreground="#9CA3AF", background="#111827")
 subtitle.grid(row=1, column=0, sticky="w", pady=(2, 0))
 
@@ -554,9 +443,6 @@ label_keywords = ttk.Label(left_frame, text="상품 키워드(,로 구분):")
 label_keywords.grid(row=0, column=0, sticky="w", pady=(0, 4))
 entry_keywords = ttk.Entry(left_frame, width=40)
 entry_keywords.grid(row=0, column=1, padx=5, pady=(0, 4), sticky="ew")
-entry_keywords.bind("<Control-v>", paste_keywords)
-entry_keywords.bind("<Control-V>", paste_keywords)
-entry_keywords.configure(font=(font_family_main, 10))
 
 label_scroll = ttk.Label(left_frame, text="스크롤 횟수:")
 label_scroll.grid(row=1, column=0, sticky="w", pady=(4, 4))
@@ -591,21 +477,10 @@ btn_run.grid(row=5, column=0, columnspan=3, pady=(12, 0), sticky="ew")
 right_frame.rowconfigure(1, weight=1)
 right_frame.columnconfigure(0, weight=1)
 
-log_title = ttk.Label(right_frame, text="DEBUG 로그", font=(font_family_main, 10, "bold"))
+log_title = ttk.Label(right_frame, text="DEBUG 로그", font=("Segoe UI Semibold", 10))
 log_title.grid(row=0, column=0, sticky="w", pady=(0, 4))
 
-log_widget = tk.Text(
-    right_frame,
-    wrap="none",
-    width=60,
-    height=25,
-    bg="#020617",
-    fg="#E5E7EB",
-    insertbackground="#E5E7EB",
-    relief="flat",
-    borderwidth=0
-)
-log_widget.configure(font=(font_family_main, 10))
+log_widget = tk.Text(right_frame, wrap="none", width=60, height=25, bg="#020617", fg="#E5E7EB", insertbackground="#E5E7EB", relief="flat", borderwidth=0)
 log_widget.grid(row=1, column=0, sticky="nsew")
 
 scrollbar_y = ttk.Scrollbar(right_frame, orient="vertical", command=log_widget.yview)
