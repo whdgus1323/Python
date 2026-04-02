@@ -1,0 +1,4 @@
+[RERR 생성] 시간: 32.21490827432, 노드: node[3], Precursor 수: 1
+  - Precursor: 10.0.0.10
+[RERR 생성] 시간: 39.00345254864, 노드: rsu[0], Precursor 수: 1
+  - Precursor: 10.0.1.34
