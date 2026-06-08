@@ -1,0 +1,45 @@
+{
+  "train_runs": [
+    4,
+    10,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    28
+  ],
+  "valid_runs": [
+    31,
+    35
+  ],
+  "test_runs": [
+    22,
+    25
+  ],
+  "per_run_sample": 60000,
+  "state_cbr_bin": 5,
+  "state_neighbor_bin": 5,
+  "min_pair_support": 10,
+  "full_rows": 770469,
+  "teacher_states": 705,
+  "train_rows": 569638,
+  "valid_rows": 112329,
+  "test_rows": 39171,
+  "train_states": 705,
+  "valid_states": 705,
+  "test_states": 474,
+  "row_r2_low": 0.6003235578536987,
+  "row_r2_high": 0.5435311794281006,
+  "row_mae_low": 0.6572465300559998,
+  "row_mae_high": 1.015523910522461,
+  "row_r2_uniform": 0.5719273686408997,
+  "state_r2_low": 0.732313299227641,
+  "state_r2_high": 0.7138319813193019,
+  "state_mae_low": 0.5617854082131688,
+  "state_mae_high": 0.8685279234552182,
+  "eval_states": 474,
+  "state_r2_uniform": 0.7230726402734715
+}
