@@ -1,0 +1,8 @@
+{
+  "bandwidth": 1.0,
+  "temperature": 0.5,
+  "unique_states": 400,
+  "unique_pairs": 6,
+  "lookup_rows": 3087,
+  "lookup_unique_pairs": 4
+}

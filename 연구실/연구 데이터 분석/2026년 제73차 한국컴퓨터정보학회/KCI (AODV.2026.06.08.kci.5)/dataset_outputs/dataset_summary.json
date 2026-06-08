@@ -1,0 +1,12 @@
+{
+  "raw_rows": 269742,
+  "row_dataset_rows": 237142,
+  "unique_states": 400,
+  "unique_label_pairs": 6,
+  "train_rows": 171294,
+  "valid_rows": 32093,
+  "test_rows": 33755,
+  "train_states": 280,
+  "valid_states": 60,
+  "test_states": 60
+}
