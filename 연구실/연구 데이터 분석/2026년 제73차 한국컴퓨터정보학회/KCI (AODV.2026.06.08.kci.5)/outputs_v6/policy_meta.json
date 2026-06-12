@@ -1,0 +1,7 @@
+{
+  "full_rows": 237142,
+  "train_rows": 151770,
+  "valid_rows": 37943,
+  "test_rows": 47429,
+  "state_count": 400
+}
