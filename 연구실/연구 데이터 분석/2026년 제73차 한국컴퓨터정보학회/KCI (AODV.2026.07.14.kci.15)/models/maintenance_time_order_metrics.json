@@ -1,0 +1,193 @@
+{
+  "task": "maintenance",
+  "dataset": "D:\\Github\\Python\\\uc5f0\uad6c\uc2e4\\\uc5f0\uad6c \ub370\uc774\ud130 \ubd84\uc11d\\2026\ub144 \uc81c73\ucc28 \ud55c\uad6d\ucef4\ud4e8\ud130\uc815\ubcf4\ud559\ud68c\\KCI (AODV.2026.07.14.kci.15)\\data\\aodv_maintenance_training_dataset_v2.csv",
+  "split_mode": "time_order",
+  "rows": 3784,
+  "label_counts": {
+    "0": 3575,
+    "1": 209
+  },
+  "train_rows": 2648,
+  "test_rows": 1136,
+  "test_label_counts": {
+    "0": 1057,
+    "1": 79
+  },
+  "average_precision": 0.8527189852519517,
+  "roc_auc": 0.9787552543022405,
+  "confusion_matrix": [
+    [
+      1011,
+      46
+    ],
+    [
+      3,
+      76
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 0.9970414201183432,
+      "recall": 0.956480605487228,
+      "f1-score": 0.9763399323998069,
+      "support": 1057.0
+    },
+    "1": {
+      "precision": 0.6229508196721312,
+      "recall": 0.9620253164556962,
+      "f1-score": 0.7562189054726368,
+      "support": 79.0
+    },
+    "accuracy": 0.9568661971830986,
+    "macro avg": {
+      "precision": 0.8099961198952372,
+      "recall": 0.9592529609714622,
+      "f1-score": 0.8662794189362218,
+      "support": 1136.0
+    },
+    "weighted avg": {
+      "precision": 0.9710263167422422,
+      "recall": 0.9568661971830986,
+      "f1-score": 0.9610322201399069,
+      "support": 1136.0
+    }
+  },
+  "threshold_table": [
+    {
+      "threshold": 0.5,
+      "precision": 0.6229508196721312,
+      "recall": 0.9620253164556962,
+      "f1": 0.7562189054726368,
+      "predicted_positive": 122
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.6229508196721312,
+      "recall": 0.9620253164556962,
+      "f1": 0.7562189054726368,
+      "predicted_positive": 122
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.6229508196721312,
+      "recall": 0.9620253164556962,
+      "f1": 0.7562189054726368,
+      "predicted_positive": 122
+    },
+    {
+      "threshold": 0.1,
+      "precision": 0.6229508196721312,
+      "recall": 0.9620253164556962,
+      "f1": 0.7562189054726368,
+      "predicted_positive": 122
+    },
+    {
+      "threshold": 0.05,
+      "precision": 0.6178861788617886,
+      "recall": 0.9620253164556962,
+      "f1": 0.7524752475247525,
+      "predicted_positive": 123
+    }
+  ],
+  "feature_names": [
+    "acceptedHopCount",
+    "externalId",
+    "localCbr",
+    "neighborCount",
+    "bdStationCount",
+    "vehicleSpeedKmh",
+    "networkNodeCount",
+    "rreqReceiveSpeedAvgKmh",
+    "rreqReceiveSpeedMinKmh",
+    "rreqReceiveSpeedMaxKmh",
+    "rreqReceiveSpeedP05Kmh",
+    "rreqReceiveSpeedP10Kmh",
+    "rreqReceiveSpeedP95Kmh",
+    "originatedRreqCount",
+    "originatedRerrCount",
+    "rrepAckReceivedCount",
+    "routeDiscoveryStartedCount",
+    "managedRouteCount",
+    "activeRouteCount",
+    "precursorSum",
+    "rerrGeneratedCount",
+    "rerrUnreachableSum",
+    "rerrPrecursorSum"
+  ],
+  "excluded_features": [
+    "dataRouteMissCount",
+    "dataRouteUseCount",
+    "macAckReceivedCount",
+    "nodeIndex",
+    "rerrReceivedCount",
+    "routeDiscoveryFailedCount",
+    "routeDiscoverySucceededCount",
+    "rrepAllowedCount",
+    "rrepBlockedCount",
+    "rrepCandidateCount",
+    "rrepReceivedCount",
+    "rreqReceivedCount"
+  ],
+  "top_features": [
+    {
+      "feature": "activeRouteCount",
+      "score": 6.677116204191194
+    },
+    {
+      "feature": "precursorSum",
+      "score": 3.5484068828516127
+    },
+    {
+      "feature": "rerrPrecursorSum",
+      "score": 2.836348807975812
+    },
+    {
+      "feature": "originatedRreqCount",
+      "score": 2.4720322335952587
+    },
+    {
+      "feature": "rerrUnreachableSum",
+      "score": 2.4536164688710347
+    },
+    {
+      "feature": "managedRouteCount",
+      "score": 2.143540763049777
+    },
+    {
+      "feature": "routeDiscoveryStartedCount",
+      "score": 1.5906700501659952
+    },
+    {
+      "feature": "rerrGeneratedCount",
+      "score": 1.3649241673521055
+    },
+    {
+      "feature": "originatedRerrCount",
+      "score": 0.9581153639726553
+    },
+    {
+      "feature": "neighborCount",
+      "score": 0.2131612712770136
+    },
+    {
+      "feature": "bdStationCount",
+      "score": 0.2131612712770136
+    },
+    {
+      "feature": "rreqReceiveSpeedMaxKmh",
+      "score": 0.15251823563137276
+    },
+    {
+      "feature": "rreqReceiveSpeedP05Kmh",
+      "score": 0.15251823563137276
+    },
+    {
+      "feature": "rreqReceiveSpeedP95Kmh",
+      "score": 0.15251823563137276
+    },
+    {
+      "feature": "rreqReceiveSpeedP10Kmh",
+      "score": 0.15251823563137276
+    }
+  ]
+}

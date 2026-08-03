@@ -1,0 +1,287 @@
+{
+  "main": {
+    "id": "8151e13d6b5ed0f2",
+    "type": "split",
+    "children": [
+      {
+        "id": "3de75e11ba1ad658",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "89cab8127d6da775",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CBR_Threshold_Scheme.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CBR_Threshold_Scheme"
+            }
+          },
+          {
+            "id": "b13b817224146ce8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Part_1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Part_1"
+            }
+          },
+          {
+            "id": "66eed71f24a5fa53",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026.07.07.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026.07.07"
+            }
+          },
+          {
+            "id": "cc2aaa743b4b9051",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CBR_Threshold_.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CBR_Threshold_"
+            }
+          },
+          {
+            "id": "ce2efb36387caaba",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "2026.06.30_1.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "2026.06.30_1"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "eeeaa5cef5bdba5e",
+    "type": "split",
+    "children": [
+      {
+        "id": "14d77646e914cff3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "55776b8d29f4988c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "f53a8db19a350464",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "검색"
+            }
+          },
+          {
+            "id": "54c05a34db4a75bd",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "북마크"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "48f4fd7d39d0a3f8",
+    "type": "split",
+    "children": [
+      {
+        "id": "317fbe9892b5ad1d",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "25bf9a0088ca5c8f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "문맥과 맥락.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "문맥과 맥락 의 백링크"
+            }
+          },
+          {
+            "id": "76620c4f382ce3f0",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "문맥과 맥락.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "문맥과 맥락 의 나가는 링크"
+            }
+          },
+          {
+            "id": "5921fc26441f0f79",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "태그"
+            }
+          },
+          {
+            "id": "2ffa3177abd7d3b2",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "모든 속성"
+            }
+          },
+          {
+            "id": "42ac2356043205ea",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "문맥과 맥락.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "문맥과 맥락 의 개요"
+            }
+          },
+          {
+            "id": "d9fe8aecdef3f8db",
+            "type": "leaf",
+            "state": {
+              "type": "footnotes",
+              "state": {
+                "file": "Part_3.md"
+              },
+              "icon": "lucide-file-signature",
+              "title": "각주"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false
+    }
+  },
+  "active": "66eed71f24a5fa53",
+  "lastOpenFiles": [
+    "2026.06.30_3.md",
+    "2026.07.07.md",
+    "2026.06.30_1.md",
+    "2026.07.02_미반영_항목.md",
+    "2026.07.01_jksci_10papers_analysis.md",
+    "2026.07.01_jksci_similar_papers_10.md",
+    "2026.07.01_intro-pattern-analysis_10papers.md",
+    "2026.06.30_2.md",
+    "Part_2.md",
+    "무제.base",
+    "Pasted image 20260618111700.png",
+    "CBR_Threshold_.md",
+    "Part_3.md",
+    "Part_1.md",
+    "계수_튜닝_데이터/Backup/summary.json",
+    "계수_튜닝_데이터/Backup/03_selected_score_config.csv",
+    "계수_튜닝_데이터/Backup/02_shortlist_regression_eval.csv",
+    "계수_튜닝_데이터/Backup/01_score_candidate_ranking.csv",
+    "계수_튜닝_데이터/Backup",
+    "계수_튜닝_데이터/새 폴더",
+    "계수_튜닝_데이터/summary.json",
+    "계수_튜닝_데이터/03_selected_score_config.csv",
+    "계수_튜닝_데이터/02_shortlist_regression_eval.csv",
+    "Pasted image 20260618112035.png",
+    "Pasted image 20260618111719.png",
+    "환영합니다!.md",
+    "CBR_Threshold_Parts.md",
+    "CBR_Threshold_Scheme.md",
+    "문맥과 맥락.md"
+  ]
+}

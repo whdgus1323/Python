@@ -1,0 +1,15 @@
+{
+  "selection_note": "score coefficient selected by shortlist regression evaluation",
+  "selected_aS": 2.0,
+  "selected_aF": 1.0,
+  "selected_aD": 2.0,
+  "selected_aR": 1.0,
+  "selected_aI": 0.25,
+  "selected_aX": 0.5,
+  "selected_teacher_states": 4458,
+  "selected_unique_pairs": 732,
+  "selected_max_selected_pair_share": 0.005607895917451772,
+  "selected_mean_score_gap_1_2": 0.3592871944331029,
+  "selected_state_r2_uniform": 0.525239257076215,
+  "selected_row_r2_uniform": 0.8747218077750275
+}

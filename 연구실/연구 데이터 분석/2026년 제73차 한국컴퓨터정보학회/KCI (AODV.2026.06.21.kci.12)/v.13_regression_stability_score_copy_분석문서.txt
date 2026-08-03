@@ -1,0 +1,360 @@
+v.13_regression_stability_score copy.ipynb 분석 문서
+
+작성 대상 파일
+- D:\Github\Python\연구실\연구 데이터 분석\2026년 제73차 한국컴퓨터정보학회\KCI (AODV.2026.06.21.kci.12)\v.13_regression_stability_score copy.ipynb
+
+작성 원칙
+- 본 문서는 실제 노트북 코드, 노트북에 저장된 실행 출력, 그리고 생성된 산출물(summary.json, teacher_table.csv, state_eval.csv)을 기준으로 작성하였다.
+- 코드에 없는 의도, 실험 설계 배경, 연구 목적은 추정하지 않았다.
+- 해석이 포함되는 문장은 "관찰에 근거한 해석"으로 제한하였다.
+
+1. 노트북 구조
+- nbformat: 4
+- nbformat_minor: 5
+- kernelspec:
+  - display_name: base
+  - language: python
+  - name: python3
+- language_info.version: 3.11.7
+- 전체 셀 수: 2
+- 코드 셀 수: 2
+- 마크다운 셀 수: 0
+
+확인된 함수
+- load_run_frame
+- make_model
+- format_values
+
+2. 사용 라이브러리
+- pathlib.Path
+- gc
+- json
+- random
+- numpy
+- pandas
+- tensorflow
+- sklearn.metrics.mean_absolute_error
+- sklearn.metrics.r2_score
+- sklearn.preprocessing.StandardScaler
+- tensorflow.keras
+
+3. 입력/출력 경로
+입력 루트
+- DATA_ROOT = D:\CBR_Threshold\raw_data\train_data\range (0~50)
+
+출력 디렉터리
+- OUTPUT_DIR = Path.cwd() / "outputs_v13_regression_stability_score"
+
+실제로 확인된 출력 파일
+- D:\Github\Python\연구실\연구 데이터 분석\2026년 제73차 한국컴퓨터정보학회\KCI (AODV.2026.06.21.kci.12)\outputs_v13_regression_stability_score\summary.json
+- D:\Github\Python\연구실\연구 데이터 분석\2026년 제73차 한국컴퓨터정보학회\KCI (AODV.2026.06.21.kci.12)\outputs_v13_regression_stability_score\summary.csv
+- D:\Github\Python\연구실\연구 데이터 분석\2026년 제73차 한국컴퓨터정보학회\KCI (AODV.2026.06.21.kci.12)\outputs_v13_regression_stability_score\state_eval.csv
+- D:\Github\Python\연구실\연구 데이터 분석\2026년 제73차 한국컴퓨터정보학회\KCI (AODV.2026.06.21.kci.12)\outputs_v13_regression_stability_score\train_pair_scores.csv
+- D:\Github\Python\연구실\연구 데이터 분석\2026년 제73차 한국컴퓨터정보학회\KCI (AODV.2026.06.21.kci.12)\outputs_v13_regression_stability_score\teacher_table.csv
+
+4. 데이터 분할 및 상수 설정
+run 분할
+- TRAIN_RUNS = [4, 10, 14, 15, 16, 17, 18, 19, 20, 28]
+- VALID_RUNS = [31, 35]
+- TEST_RUNS = [22, 25]
+
+기타 설정값
+- PER_RUN_SAMPLE = None
+- STATE_CBR_BIN = 5
+- STATE_NEIGHBOR_BIN = 5
+- MIN_PAIR_SUPPORT = 5
+- SCORE_TOLERANCE = 0.2
+- SEED = 42
+
+offlineScore 가중치
+- SCORE_SUCCESS_WEIGHT = 2.0
+- SCORE_FAIL_WEIGHT = 3.0
+- SCORE_DELAY_WEIGHT = 0.02
+- SCORE_RERR_WEIGHT = 1.0
+- SCORE_INVALIDATE_WEIGHT = 0.25
+- SCORE_DELETE_WEIGHT = 0.1
+
+5. 데이터 로딩 및 전처리
+load_run_frame(run_id) 함수에서 수행하는 작업
+
+5.1 aodv_transmission_failure_diagnosis_1s.csv에서 읽는 열
+- time
+- node
+- neighborCount
+- routeDiscoverySucceeded
+- routeDiscoveryFailed
+- routeDiscoveryDelayAvgMs
+- rerrOriginated
+- routeInvalidate
+- routeDelete
+
+생성/변환 열
+- sec = time을 숫자로 변환 후 int32 처리
+- neighborCount = float32
+- futureSucceeded = routeDiscoverySucceeded를 float32로 변환
+- futureFailed = routeDiscoveryFailed를 float32로 변환
+- futureDelay = routeDiscoveryDelayAvgMs를 float32로 변환
+- futureRerr = rerrOriginated를 float32로 변환
+- futureInvalidate = routeInvalidate를 float32로 변환
+- futureDelete = routeDelete를 float32로 변환
+
+5.2 aodv_cbr_rrep_decisions.csv에서 읽는 열
+- time
+- node
+- hopCount
+- localCbr
+- appliedLowThreshold
+- appliedHighThreshold
+
+처리 규칙
+- chunksize=250000으로 청크 단위 로드
+- 결측이 있는 행 제거
+- sec = floor(time)
+- hopCount, localCbr, appliedLowThreshold, appliedHighThreshold를 float32로 변환
+- hopCount가 1 이상 6 이하인 행만 유지
+- lowInt, highInt를 반올림 후 int16 변환
+- lowInt <= highInt 조건을 만족하는 행만 유지
+
+5.3 병합 및 파생 변수
+- key: [sec, node]
+- future 데이터와 how="left"로 병합
+- isDirectRoute = (hopCount <= 1)
+
+6. offlineScore 정의
+코드상 정의는 다음과 같다.
+
+offlineScore =
+  + 2.0 * futureSucceeded
+  - 3.0 * futureFailed
+  - 0.02 * futureDelay
+  - 1.0 * futureRerr
+  - 0.25 * futureInvalidate
+  - 0.1 * futureDelete
+
+설명
+- 위 식은 코드에 직접 명시되어 있다.
+- 이 식의 계수 선택 근거는 노트북 내부에 별도 설명이 없다.
+
+7. 상태(state) 구성 방식
+생성되는 상태 관련 열
+- stateCbrBin = floor(localCbr / 5) * 5 를 0~100 범위로 clip 후 int16 변환
+- stateNeighborBin = floor(neighborCount / 5) * 5 를 0~100 범위로 clip 후 int16 변환
+- stateHopBin = hopCount를 반올림 후 1~6 범위로 clip 후 int8 변환
+- stateDirectBin = isDirectRoute를 int8 변환
+- stateKey = "stateCbrBin|stateNeighborBin|stateHopBin|stateDirectBin"
+
+관찰에 근거한 설명
+- 노트북은 연속 입력값(localCbr, neighborCount, hopCount, isDirectRoute)도 보존하지만, teacher 생성 과정에서는 위와 같이 구간화된 stateKey를 사용한다.
+
+8. teacher label 생성 과정
+8.1 train_source 구성
+- full_df 중 split == "train" 인 행만 사용
+- 사용 열: state 관련 열 + lowInt + highInt + score 관련 열
+
+8.2 train_pair 계산
+그룹화 기준
+- stateKey
+- stateCbrBin
+- stateNeighborBin
+- stateHopBin
+- stateDirectBin
+- lowInt
+- highInt
+
+집계 항목
+- scoreMean = offlineScore 평균
+- sampleCount = offlineScore 개수
+- meanSucceeded
+- meanFailed
+- meanDelay
+- meanRerr
+- meanInvalidate
+- meanDelete
+
+필터 및 추가 계산
+- sampleCount >= 5 인 행만 유지
+- pairWidth = highInt - lowInt
+- bestScore = 각 stateKey 내 최대 scoreMean
+- scoreGap = bestScore - scoreMean
+- teacher_candidates = scoreGap <= 0.2 인 행
+
+8.3 최종 teacher 선택
+정렬 기준
+- [stateKey, lowInt, scoreMean, sampleCount, pairWidth, highInt]
+정렬 방향
+- [오름차순, 내림차순, 내림차순, 내림차순, 오름차순, 오름차순]
+
+이후
+- stateKey별 상위 1개만 선택
+- labelLowCont = lowInt
+- labelHighCont = highInt
+
+확인된 teacher_table.csv
+- 총 1743줄(헤더 포함)
+- 데이터 행 기준 state 수: 1742
+
+9. 학습용 입력/타깃
+입력 feature_cols
+- localCbr
+- neighborCount
+- hopCount
+- isDirectRoute
+
+타깃 target_cols
+- labelLowCont
+- labelHighCont
+
+스케일링
+- x_scaler = StandardScaler()
+- y_scaler = StandardScaler()
+
+10. 모델 구조
+make_model(input_dim) 함수 정의
+- keras.Sequential 사용
+- Input(shape=(input_dim,))
+- Dense(256, activation="relu")
+- Dense(256, activation="relu")
+- Dense(128, activation="relu")
+- Dense(2)
+
+컴파일 설정
+- optimizer = Adam(1e-3)
+- loss = mse
+
+11. 학습 설정
+callbacks
+- EarlyStopping(monitor="val_loss", patience=6, restore_best_weights=True)
+- ReduceLROnPlateau(monitor="val_loss", factor=0.5, patience=3, min_lr=1e-5)
+
+fit 설정
+- epochs = 40
+- batch_size = 4096
+- verbose = 1
+- validation_data = (x_valid, y_valid)
+
+12. 노트북에 저장된 학습 출력
+노트북 출력 스트림에서 확인된 사항
+- Epoch 1/40부터 Epoch 40/40까지 기록 존재
+- 첫 epoch val_loss: 0.2045
+- 마지막 epoch val_loss: 0.0617
+- 파싱된 결과 기준 최저 val_loss는 epoch 40의 0.0617
+
+주의
+- 이것은 노트북 파일에 저장된 출력 기준이다.
+- 본 문서 작성 과정에서 모델을 재학습한 것은 아니다.
+
+13. 평가 방식
+13.1 row 단위 평가
+- test_pred = y_scaler.inverse_transform(model.predict(x_test))
+- low, high 각각에 대해 R²와 MAE 계산
+- row_r2_uniform = (row_r2_low + row_r2_high) / 2.0
+
+13.2 state 단위 평가
+- test_df에서 stateKey별로 다음을 집계
+  - labelLowCont: first
+  - labelHighCont: first
+  - predLowCont: mean
+  - predHighCont: mean
+- 그 후 low, high 각각에 대해 R²와 MAE 계산
+- state_r2_uniform = (state_r2_low + state_r2_high) / 2.0
+
+14. summary.json에 저장된 실제 결과
+- full_rows: 40008619
+- teacher_states: 1742
+- train_rows: 31020875
+- valid_rows: 4143054
+- test_rows: 4810188
+- train_states: 1742
+- valid_states: 1670
+- test_states: 1691
+
+row 기준 지표
+- row_r2_low: 0.941652960356662
+- row_r2_high: 0.9434752957865831
+- row_mae_low: 0.8912599682807922
+- row_mae_high: 1.482306718826294
+- row_r2_uniform: 0.9425641280716226
+
+state 기준 지표
+- state_r2_low: 0.8134091457203176
+- state_r2_high: 0.7720112629275172
+- state_mae_low: 1.890885591506958
+- state_mae_high: 3.31434965133667
+- eval_states: 1691
+- state_r2_uniform: 0.7927102043239174
+
+15. state_eval.csv에서 확인되는 내용
+파일 형식
+- 열: stateKey, labelLowCont, labelHighCont, predLowCont, predHighCont
+- 총 1692줄(헤더 포함)
+- 데이터 행 기준 평가 state 수: 1691
+
+앞부분 예시 관찰
+- stateKey 0|0|1|1: 실제 (20.0, 27.0), 예측 (19.720415, 25.7987)
+- stateKey 0|0|2|0: 실제 (20.0, 49.0), 예측 (19.225376, 48.34068)
+- stateKey 0|0|4|0: 실제 (19.0, 47.0), 예측 (20.192785, 37.52538)
+
+설명
+- 일부 state에서는 실제값과 예측값 차이가 작고, 일부 state에서는 특히 high threshold 쪽 차이가 더 크게 보이는 예시가 존재한다.
+- 이 문장은 state_eval.csv 앞부분 실제 수치를 근거로 한 관찰이다.
+
+16. 두 번째 코드 셀의 역할
+두 번째 셀은 다음 작업을 수행한다.
+- Dense layer 4개의 가중치/바이어스 추출
+- x_scaler의 mean_, scale_ 추출
+- y_scaler의 mean_, scale_ 추출
+- 이를 문자열로 변환하여 다음 형식의 설정 라인을 출력
+  - **.routing.dlDirectThresholdRrepEnabled = true
+  - **.routing.dlDirectThresholdRrepFeatureSet = "raw4"
+  - **.routing.dlDirectThresholdRrepNeighborNorm = 20
+  - **.routing.dlDirectThresholdRrepHopNorm = 10
+  - 기타 hidden layer size, input/output 표준화 파라미터, 모든 Dense weight/bias
+
+노트북 출력에서 확인된 사실
+- Dense layer 개수는 4개라고 가정하고 검사하며, 다를 경우 예외를 발생시키도록 되어 있다.
+- 실제 출력에는 Hidden1Size=256, Hidden2Size=256, Hidden3Size=128이 포함되어 있다.
+- 두 번째 셀의 stream 출력 길이는 매우 크며, 노트북 저장 출력 기준 약 1,388,116자이다.
+
+17. 코드상 직접 확인되는 특징
+- random.seed, np.random.seed, tf.random.set_seed 모두 42로 설정되어 있다.
+- full_df는 모든 run의 load_run_frame 결과를 concat하여 생성한다.
+- train/valid/test 데이터는 teacher 테이블과 inner merge로 결합한다.
+- 모델 학습 전후 메모리 정리를 위해 del과 gc.collect()를 사용한다.
+- 결과 저장 형식은 csv와 json이다.
+
+18. 코드상 직접 확인되는 제한 사항
+아래 항목은 코드에 실제 존재하는 구조를 그대로 기술한 것이다.
+
+- 마크다운 설명 셀이 없다.
+- PER_RUN_SAMPLE 변수가 선언되어 있으나, 노트북 코드에서 샘플링 로직에 사용되는 부분은 확인되지 않았다.
+- OUTPUT_DIR은 Path.cwd() 기준으로 생성된다.
+- 두 번째 셀의 export 결과는 파일 저장 코드 없이 print로만 출력된다.
+- valid/test에서 teacher와 매칭되지 않아 제외된 행 수 또는 상태 수를 summary.json에 별도 기록하지 않는다.
+
+19. 관찰에 근거한 해석
+이 절은 코드와 산출물에 근거한 최소한의 해석만 포함한다.
+
+- 이 노트북은 먼저 train 데이터에서 state별 threshold pair(lowInt, highInt)를 선택하고, 이후 신경망으로 그 값을 회귀하도록 구성되어 있다.
+- 성능 지표는 row 단위와 state 단위가 모두 계산되며, 저장된 결과에서는 state 단위 R²가 row 단위 R²보다 낮다.
+- teacher 생성 과정에서 stateKey가 핵심 키로 사용되므로, 상태 구간화(state binning)는 전체 파이프라인에서 중요한 역할을 한다.
+
+20. 본 문서에서 의도적으로 포함하지 않은 내용
+다음 내용은 노트북 코드나 확인된 산출물만으로는 입증되지 않으므로 본 문서에 단정적으로 쓰지 않았다.
+- 왜 특정 가중치(2.0, 3.0, 0.02, 1.0, 0.25, 0.1)를 선택했는지에 대한 연구적 근거
+- 왜 bin 크기를 5로 정했는지에 대한 설계 배경
+- 왜 256-256-128 구조를 선택했는지에 대한 비교 실험 결과
+- 실제 시뮬레이터 적용 후 시스템 수준 성능 변화
+- 작성자의 연구 의도나 기대 효과
+
+21. 요약
+실제 코드와 산출물 기준으로 확인되는 사실은 다음과 같다.
+- 이 노트북은 AODV 관련 두 CSV를 결합해 상태 기반 teacher threshold를 만들고, 이를 4개 입력 feature로 예측하는 2출력 회귀모델을 학습한다.
+- teacher state 수는 1742개이며, test 평가 state 수는 1691개이다.
+- 저장된 평가 결과는 다음과 같다.
+  - row_r2_uniform = 0.9425641280716226
+  - state_r2_uniform = 0.7927102043239174
+- 두 번째 셀은 학습된 모델 파라미터를 OMNeT++ 설정 문자열 형태로 출력한다.
+
+작성 파일 정보
+- 파일명: v.13_regression_stability_score_copy_분석문서.txt
+- 저장 위치: D:\Github\Python\연구실\연구 데이터 분석\2026년 제73차 한국컴퓨터정보학회\KCI (AODV.2026.06.21.kci.12)

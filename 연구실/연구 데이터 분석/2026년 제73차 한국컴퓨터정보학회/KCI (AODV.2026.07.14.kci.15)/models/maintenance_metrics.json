@@ -1,0 +1,192 @@
+{
+  "task": "maintenance",
+  "dataset": "D:\\Github\\Python\\\uc5f0\uad6c\uc2e4\\\uc5f0\uad6c \ub370\uc774\ud130 \ubd84\uc11d\\2026\ub144 \uc81c73\ucc28 \ud55c\uad6d\ucef4\ud4e8\ud130\uc815\ubcf4\ud559\ud68c\\KCI (AODV.2026.07.14.kci.15)\\data\\aodv_maintenance_training_dataset_v2.csv",
+  "rows": 3784,
+  "label_counts": {
+    "0": 3575,
+    "1": 209
+  },
+  "train_rows": 2648,
+  "test_rows": 1136,
+  "test_label_counts": {
+    "0": 1073,
+    "1": 63
+  },
+  "average_precision": 1.0,
+  "roc_auc": 1.0,
+  "confusion_matrix": [
+    [
+      1073,
+      0
+    ],
+    [
+      0,
+      63
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1073.0
+    },
+    "1": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 63.0
+    },
+    "accuracy": 1.0,
+    "macro avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1136.0
+    },
+    "weighted avg": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1-score": 1.0,
+      "support": 1136.0
+    }
+  },
+  "threshold_table": [
+    {
+      "threshold": 0.5,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "predicted_positive": 63
+    },
+    {
+      "threshold": 0.3,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "predicted_positive": 63
+    },
+    {
+      "threshold": 0.2,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "predicted_positive": 63
+    },
+    {
+      "threshold": 0.1,
+      "precision": 0.9692307692307692,
+      "recall": 1.0,
+      "f1": 0.9843749999999999,
+      "predicted_positive": 65
+    },
+    {
+      "threshold": 0.05,
+      "precision": 0.9130434782608695,
+      "recall": 1.0,
+      "f1": 0.9545454545454545,
+      "predicted_positive": 69
+    }
+  ],
+  "feature_names": [
+    "acceptedHopCount",
+    "externalId",
+    "localCbr",
+    "neighborCount",
+    "bdStationCount",
+    "vehicleSpeedKmh",
+    "networkNodeCount",
+    "rreqReceiveSpeedAvgKmh",
+    "rreqReceiveSpeedMinKmh",
+    "rreqReceiveSpeedMaxKmh",
+    "rreqReceiveSpeedP05Kmh",
+    "rreqReceiveSpeedP10Kmh",
+    "rreqReceiveSpeedP95Kmh",
+    "originatedRreqCount",
+    "originatedRerrCount",
+    "rreqReceivedCount",
+    "rrepReceivedCount",
+    "rerrReceivedCount",
+    "macAckReceivedCount",
+    "rrepAckReceivedCount",
+    "rrepCandidateCount",
+    "rrepAllowedCount",
+    "rrepBlockedCount",
+    "routeDiscoveryStartedCount",
+    "managedRouteCount",
+    "activeRouteCount",
+    "precursorSum",
+    "rerrGeneratedCount",
+    "rerrUnreachableSum",
+    "rerrPrecursorSum"
+  ],
+  "excluded_features": [
+    "dataRouteMissCount",
+    "dataRouteUseCount",
+    "nodeIndex",
+    "routeDiscoveryFailedCount",
+    "routeDiscoverySucceededCount"
+  ],
+  "top_features": [
+    {
+      "feature": "rreqReceivedCount",
+      "score": 0.16726308622001101
+    },
+    {
+      "feature": "activeRouteCount",
+      "score": 0.1368433836795925
+    },
+    {
+      "feature": "precursorSum",
+      "score": 0.1117779730401328
+    },
+    {
+      "feature": "localCbr",
+      "score": 0.0700759341517502
+    },
+    {
+      "feature": "macAckReceivedCount",
+      "score": 0.06370456356319769
+    },
+    {
+      "feature": "rerrReceivedCount",
+      "score": 0.05836706848708153
+    },
+    {
+      "feature": "rerrUnreachableSum",
+      "score": 0.052756200494238
+    },
+    {
+      "feature": "rerrPrecursorSum",
+      "score": 0.04234174899700413
+    },
+    {
+      "feature": "rerrGeneratedCount",
+      "score": 0.034785674689344764
+    },
+    {
+      "feature": "rrepCandidateCount",
+      "score": 0.030524616360740536
+    },
+    {
+      "feature": "originatedRerrCount",
+      "score": 0.029202408573659588
+    },
+    {
+      "feature": "managedRouteCount",
+      "score": 0.027242117797844342
+    },
+    {
+      "feature": "rrepAllowedCount",
+      "score": 0.026998363799887203
+    },
+    {
+      "feature": "originatedRreqCount",
+      "score": 0.026984231233474206
+    },
+    {
+      "feature": "bdStationCount",
+      "score": 0.026916074737729116
+    }
+  ]
+}

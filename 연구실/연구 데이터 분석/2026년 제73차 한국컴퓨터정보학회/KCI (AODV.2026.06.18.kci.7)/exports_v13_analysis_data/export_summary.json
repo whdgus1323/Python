@@ -1,0 +1,39 @@
+{
+  "train_runs": [
+    4,
+    10,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    28
+  ],
+  "valid_runs": [
+    31,
+    35
+  ],
+  "test_runs": [
+    22,
+    25
+  ],
+  "per_run_sample": null,
+  "state_cbr_bin": 5,
+  "state_neighbor_bin": 5,
+  "min_pair_support": 5,
+  "score_tolerance": 0.2,
+  "score_success_weight": 2.0,
+  "score_fail_weight": 3.0,
+  "score_delay_weight": 0.02,
+  "score_rerr_weight": 1.0,
+  "score_invalidate_weight": 0.25,
+  "score_delete_weight": 0.1,
+  "full_rows": 40008619,
+  "teacher_states": 1635,
+  "train_pair_rows": 485106,
+  "train_rows": 31019642,
+  "valid_rows": 4142466,
+  "test_rows": 4809000
+}

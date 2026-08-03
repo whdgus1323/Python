@@ -1,0 +1,16 @@
+{
+  "selection_mode": "coefficient_tuning_pure_search",
+  "selected_aS": 3.0,
+  "selected_aF": 4.0,
+  "selected_aD": 0.02,
+  "selected_aR": 0.5,
+  "selected_aI": 0.1,
+  "selected_aX": 0.25,
+  "teacher_states": 1635,
+  "unique_selected_pairs": 558,
+  "max_selected_pair_share": 0.01712538226299694,
+  "mean_gap_1_2": 1.2153499810259967,
+  "ambiguous_state_share": 0.39571865443425075,
+  "pair_entropy_norm": 0.9446563922424642,
+  "major_cv": 0.35906066685234045
+}
