@@ -1,0 +1,3132 @@
+{
+  "selected": [
+    {
+      "d": 70,
+      "v": 10,
+      "n": 0,
+      "seed": 4,
+      "quadrant": "Q4",
+      "legacy": {
+        "sent": 7000,
+        "received": 6328,
+        "pdr": 90.4
+      },
+      "full": {
+        "sent": 7000,
+        "received": 5747,
+        "pdr": 82.1
+      },
+      "delta_pp": -8.300000000000011,
+      "legacy_dir": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4",
+      "full_dir": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4",
+      "legacy_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\result.txt",
+          "size": 439,
+          "mtime_ns": 1792223382320722300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\PDR.txt",
+          "size": 936,
+          "mtime_ns": 1792223376270576300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\ping_collision_summary.csv",
+          "size": 6237,
+          "mtime_ns": 1792223382305177000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\rerr_debug.txt",
+          "size": 71380,
+          "mtime_ns": 1792223382436011400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\rerr_precursor_log.txt",
+          "size": 89231,
+          "mtime_ns": 1792223382436011400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\aodv_rerr_fanout_log.csv",
+          "size": 98388,
+          "mtime_ns": 1792223382378520000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 375277,
+          "mtime_ns": 1792223382356099000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 389845,
+          "mtime_ns": 1792223382436011400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 696943,
+          "mtime_ns": 1792223382378520000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\aodv_precursor_log.csv",
+          "size": 700555,
+          "mtime_ns": 1792223382372127700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\aodv_summary_1s.csv",
+          "size": 1127459,
+          "mtime_ns": 1792223382426407900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\cbr.csv",
+          "size": 1236151,
+          "mtime_ns": 1792223382318941300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\ping_trace_log.csv",
+          "size": 2185130,
+          "mtime_ns": 1792223382335377200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\aodv_cbr_rrep_decisions.csv",
+          "size": 2714504,
+          "mtime_ns": 1792223382352242500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\aodv_control_log.csv",
+          "size": 4498185,
+          "mtime_ns": 1792223382365650000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\aodv_route_cause_events.csv",
+          "size": 4550507,
+          "mtime_ns": 1792223382396144100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\aodv_route_graph_log.csv",
+          "size": 5503626,
+          "mtime_ns": 1792223382403845000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#4\\aodv_routing_table_snapshot.csv",
+          "size": 8795110,
+          "mtime_ns": 1792223382426407900,
+          "nul_count": 0
+        }
+      ],
+      "full_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\result.txt",
+          "size": 442,
+          "mtime_ns": 1792187992615174700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\PDR.txt",
+          "size": 934,
+          "mtime_ns": 1792187987903477500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\ping_collision_summary.csv",
+          "size": 6227,
+          "mtime_ns": 1792187992407719700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\rerr_debug.txt",
+          "size": 19237,
+          "mtime_ns": 1792187995564037300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\rerr_precursor_log.txt",
+          "size": 20764,
+          "mtime_ns": 1792187995564037300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\aodv_rerr_fanout_log.csv",
+          "size": 26019,
+          "mtime_ns": 1792187994915700000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\aodv_precursor_log.csv",
+          "size": 111579,
+          "mtime_ns": 1792187994283302600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 382420,
+          "mtime_ns": 1792187993891674100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 397178,
+          "mtime_ns": 1792187995563037400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 704685,
+          "mtime_ns": 1792187994915700000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\aodv_summary_1s.csv",
+          "size": 1127164,
+          "mtime_ns": 1792187995267874700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\cbr.csv",
+          "size": 1222131,
+          "mtime_ns": 1792187992610654200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\aodv_cbr_rrep_decisions.csv",
+          "size": 1656903,
+          "mtime_ns": 1792187993572822700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\ping_trace_log.csv",
+          "size": 2156086,
+          "mtime_ns": 1792187992932036900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\aodv_control_log.csv",
+          "size": 2521427,
+          "mtime_ns": 1792187994281283800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\aodv_route_cause_events.csv",
+          "size": 3212156,
+          "mtime_ns": 1792187995247533900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\aodv_route_graph_log.csv",
+          "size": 3414036,
+          "mtime_ns": 1792187995252569500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#4\\aodv_routing_table_snapshot.csv",
+          "size": 8201915,
+          "mtime_ns": 1792187995265869200,
+          "nul_count": 0
+        }
+      ]
+    },
+    {
+      "d": 120,
+      "v": 20,
+      "n": 6,
+      "seed": 5,
+      "quadrant": "Q4",
+      "legacy": {
+        "sent": 7000,
+        "received": 6843,
+        "pdr": 97.75714285714285
+      },
+      "full": {
+        "sent": 7000,
+        "received": 6393,
+        "pdr": 91.32857142857142
+      },
+      "delta_pp": -6.428571428571431,
+      "legacy_dir": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5",
+      "full_dir": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5",
+      "legacy_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\result.txt",
+          "size": 441,
+          "mtime_ns": 1792307972702053000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\PDR.txt",
+          "size": 937,
+          "mtime_ns": 1792307969490502100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\ping_collision_summary.csv",
+          "size": 10676,
+          "mtime_ns": 1792307972454462200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\rerr_precursor_log.txt",
+          "size": 12536,
+          "mtime_ns": 1792307975930563400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\rerr_debug.txt",
+          "size": 14749,
+          "mtime_ns": 1792307975929557200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\aodv_rerr_fanout_log.csv",
+          "size": 17973,
+          "mtime_ns": 1792307974916004400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\aodv_precursor_log.csv",
+          "size": 191659,
+          "mtime_ns": 1792307974303690200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 616555,
+          "mtime_ns": 1792307973979855000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 638189,
+          "mtime_ns": 1792307975928052900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\aodv_cbr_rrep_decisions.csv",
+          "size": 1038668,
+          "mtime_ns": 1792307973661224800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 1141231,
+          "mtime_ns": 1792307974914500400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\aodv_control_log.csv",
+          "size": 1692927,
+          "mtime_ns": 1792307974302690300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\aodv_summary_1s.csv",
+          "size": 1843568,
+          "mtime_ns": 1792307975591397200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\cbr.csv",
+          "size": 2097573,
+          "mtime_ns": 1792307972701052700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\ping_trace_log.csv",
+          "size": 2235864,
+          "mtime_ns": 1792307973023584300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\aodv_route_graph_log.csv",
+          "size": 2291512,
+          "mtime_ns": 1792307975562864300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\aodv_route_cause_events.csv",
+          "size": 2761123,
+          "mtime_ns": 1792307975557847300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\6\\seed#5\\aodv_routing_table_snapshot.csv",
+          "size": 13654592,
+          "mtime_ns": 1792307975587392900,
+          "nul_count": 0
+        }
+      ],
+      "full_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\result.txt",
+          "size": 442,
+          "mtime_ns": 1792215733180082400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\PDR.txt",
+          "size": 924,
+          "mtime_ns": 1792215617080382700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\rerr_precursor_log.txt",
+          "size": 9428,
+          "mtime_ns": 1792215741535957200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\ping_collision_summary.csv",
+          "size": 10669,
+          "mtime_ns": 1792215730474345400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\rerr_debug.txt",
+          "size": 11576,
+          "mtime_ns": 1792215741535957200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\aodv_rerr_fanout_log.csv",
+          "size": 15296,
+          "mtime_ns": 1792215737375596800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\aodv_precursor_log.csv",
+          "size": 27099,
+          "mtime_ns": 1792215736867380900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 627409,
+          "mtime_ns": 1792215736402173000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 649231,
+          "mtime_ns": 1792215740198647400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 1152676,
+          "mtime_ns": 1792215737375596800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\aodv_cbr_rrep_decisions.csv",
+          "size": 1659701,
+          "mtime_ns": 1792215735901013200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\aodv_summary_1s.csv",
+          "size": 1843599,
+          "mtime_ns": 1792215737886988600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\cbr.csv",
+          "size": 2098162,
+          "mtime_ns": 1792215733178418200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\ping_trace_log.csv",
+          "size": 2244548,
+          "mtime_ns": 1792215734292523200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\aodv_control_log.csv",
+          "size": 2479628,
+          "mtime_ns": 1792215736867380900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\aodv_route_graph_log.csv",
+          "size": 3502644,
+          "mtime_ns": 1792215737836370400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\aodv_route_cause_events.csv",
+          "size": 3988173,
+          "mtime_ns": 1792215737828551000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#20\\6\\seed#5\\aodv_routing_table_snapshot.csv",
+          "size": 18232839,
+          "mtime_ns": 1792215737881126400,
+          "nul_count": 0
+        }
+      ]
+    },
+    {
+      "d": 120,
+      "v": 30,
+      "n": 9,
+      "seed": 4,
+      "quadrant": "Q4",
+      "legacy": {
+        "sent": 7000,
+        "received": 6800,
+        "pdr": 97.14285714285714
+      },
+      "full": {
+        "sent": 7000,
+        "received": 6587,
+        "pdr": 94.1
+      },
+      "delta_pp": -3.0428571428571445,
+      "legacy_dir": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4",
+      "full_dir": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4",
+      "legacy_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\result.txt",
+          "size": 442,
+          "mtime_ns": 1792326145140373000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\PDR.txt",
+          "size": 937,
+          "mtime_ns": 1792326141372573600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\rerr_precursor_log.txt",
+          "size": 2147,
+          "mtime_ns": 1792326147410167000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\rerr_debug.txt",
+          "size": 2283,
+          "mtime_ns": 1792326147408161500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\aodv_rerr_fanout_log.csv",
+          "size": 2895,
+          "mtime_ns": 1792326147300523600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\ping_collision_summary.csv",
+          "size": 10513,
+          "mtime_ns": 1792326144857320700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\aodv_precursor_log.csv",
+          "size": 28758,
+          "mtime_ns": 1792326147103283100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 616051,
+          "mtime_ns": 1792326146695544400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 637806,
+          "mtime_ns": 1792326147408161500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\aodv_cbr_rrep_decisions.csv",
+          "size": 956980,
+          "mtime_ns": 1792326146311478900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 1141679,
+          "mtime_ns": 1792326147298508400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\aodv_control_log.csv",
+          "size": 1469453,
+          "mtime_ns": 1792326147103283100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\aodv_summary_1s.csv",
+          "size": 1845831,
+          "mtime_ns": 1792326147384528500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\aodv_route_graph_log.csv",
+          "size": 2046557,
+          "mtime_ns": 1792326147369370400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\cbr.csv",
+          "size": 2086406,
+          "mtime_ns": 1792326145138865300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\ping_trace_log.csv",
+          "size": 2131950,
+          "mtime_ns": 1792326145525287100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\aodv_route_cause_events.csv",
+          "size": 2585152,
+          "mtime_ns": 1792326147365359700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#30\\9\\seed#4\\aodv_routing_table_snapshot.csv",
+          "size": 8221241,
+          "mtime_ns": 1792326147381507700,
+          "nul_count": 0
+        }
+      ],
+      "full_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\result.txt",
+          "size": 437,
+          "mtime_ns": 1792219918663560400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\PDR.txt",
+          "size": 934,
+          "mtime_ns": 1792219648418800300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\ping_collision_summary.csv",
+          "size": 10558,
+          "mtime_ns": 1792219917747767500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\rerr_debug.txt",
+          "size": 10757,
+          "mtime_ns": 1792219921611810100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\rerr_precursor_log.txt",
+          "size": 11807,
+          "mtime_ns": 1792219921613815200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\aodv_rerr_fanout_log.csv",
+          "size": 14527,
+          "mtime_ns": 1792219920971999400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\aodv_precursor_log.csv",
+          "size": 73265,
+          "mtime_ns": 1792219920656653800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 628060,
+          "mtime_ns": 1792219920329179100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 649800,
+          "mtime_ns": 1792219921611810100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 1153773,
+          "mtime_ns": 1792219920971999400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\aodv_summary_1s.csv",
+          "size": 1846310,
+          "mtime_ns": 1792219921328731900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\cbr.csv",
+          "size": 2089996,
+          "mtime_ns": 1792219918663560400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\ping_trace_log.csv",
+          "size": 2159165,
+          "mtime_ns": 1792219918978979400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\aodv_cbr_rrep_decisions.csv",
+          "size": 2477851,
+          "mtime_ns": 1792219919819286700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\aodv_control_log.csv",
+          "size": 3623284,
+          "mtime_ns": 1792219920654648900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\aodv_route_cause_events.csv",
+          "size": 4701854,
+          "mtime_ns": 1792219921297533700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\aodv_route_graph_log.csv",
+          "size": 5156801,
+          "mtime_ns": 1792219921307173100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#30\\9\\seed#4\\aodv_routing_table_snapshot.csv",
+          "size": 11240803,
+          "mtime_ns": 1792219921324722000,
+          "nul_count": 0
+        }
+      ]
+    },
+    {
+      "d": 70,
+      "v": 10,
+      "n": 8,
+      "seed": 1,
+      "quadrant": "Q4",
+      "legacy": {
+        "sent": 7000,
+        "received": 518,
+        "pdr": 7.4
+      },
+      "full": {
+        "sent": 7000,
+        "received": 319,
+        "pdr": 4.557142857142857
+      },
+      "delta_pp": -2.8428571428571434,
+      "legacy_dir": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1",
+      "full_dir": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1",
+      "legacy_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\result.txt",
+          "size": 437,
+          "mtime_ns": 1792222739564807400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\PDR.txt",
+          "size": 870,
+          "mtime_ns": 1792222728171888000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\ping_collision_summary.csv",
+          "size": 6224,
+          "mtime_ns": 1792222739545206800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 394790,
+          "mtime_ns": 1792222739720728100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 406661,
+          "mtime_ns": 1792222741203718500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 713608,
+          "mtime_ns": 1792222740703223000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\rerr_debug.txt",
+          "size": 851191,
+          "mtime_ns": 1792222741203718500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\aodv_summary_1s.csv",
+          "size": 1143578,
+          "mtime_ns": 1792222741179285400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\cbr.csv",
+          "size": 1373552,
+          "mtime_ns": 1792222739560711000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\aodv_rerr_fanout_log.csv",
+          "size": 1503656,
+          "mtime_ns": 1792222740707455700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\rerr_precursor_log.txt",
+          "size": 1858587,
+          "mtime_ns": 1792222741203718500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\ping_trace_log.csv",
+          "size": 2335485,
+          "mtime_ns": 1792222739572947400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\aodv_precursor_log.csv",
+          "size": 6966846,
+          "mtime_ns": 1792222739878451000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\aodv_cbr_rrep_decisions.csv",
+          "size": 30683883,
+          "mtime_ns": 1792222739697396900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\aodv_route_cause_events.csv",
+          "size": 40139986,
+          "mtime_ns": 1792222740839373500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\aodv_control_log.csv",
+          "size": 49799527,
+          "mtime_ns": 1792222739850899900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\aodv_route_graph_log.csv",
+          "size": 54147680,
+          "mtime_ns": 1792222741014621100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\8\\seed#1\\aodv_routing_table_snapshot.csv",
+          "size": 60511588,
+          "mtime_ns": 1792222741173242600,
+          "nul_count": 0
+        }
+      ],
+      "full_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\result.txt",
+          "size": 437,
+          "mtime_ns": 1792186794558933600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\PDR.txt",
+          "size": 919,
+          "mtime_ns": 1792186793365492400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\ping_collision_summary.csv",
+          "size": 5872,
+          "mtime_ns": 1792186794114992300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\rerr_precursor_log.txt",
+          "size": 28137,
+          "mtime_ns": 1792186811968256700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\rerr_debug.txt",
+          "size": 28872,
+          "mtime_ns": 1792186811968256700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\aodv_rerr_fanout_log.csv",
+          "size": 40598,
+          "mtime_ns": 1792186811455162300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\aodv_precursor_log.csv",
+          "size": 43614,
+          "mtime_ns": 1792186811455162300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 372028,
+          "mtime_ns": 1792186811396450600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 386906,
+          "mtime_ns": 1792186811966510700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 693316,
+          "mtime_ns": 1792186811455162300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\cbr.csv",
+          "size": 1077495,
+          "mtime_ns": 1792186794542508800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\aodv_summary_1s.csv",
+          "size": 1129294,
+          "mtime_ns": 1792186811535911000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\aodv_cbr_rrep_decisions.csv",
+          "size": 1881748,
+          "mtime_ns": 1792186798908070000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\ping_trace_log.csv",
+          "size": 2237418,
+          "mtime_ns": 1792186796166618600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\aodv_control_log.csv",
+          "size": 2977467,
+          "mtime_ns": 1792186811455162300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\aodv_route_graph_log.csv",
+          "size": 3951319,
+          "mtime_ns": 1792186811501097900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\aodv_route_cause_events.csv",
+          "size": 4345611,
+          "mtime_ns": 1792186811486149000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\8\\seed#1\\aodv_routing_table_snapshot.csv",
+          "size": 19349237,
+          "mtime_ns": 1792186811533720800,
+          "nul_count": 0
+        }
+      ]
+    },
+    {
+      "d": 70,
+      "v": 10,
+      "n": 9,
+      "seed": 2,
+      "quadrant": "Q4",
+      "legacy": {
+        "sent": 7000,
+        "received": 6936,
+        "pdr": 99.08571428571429
+      },
+      "full": {
+        "sent": 7000,
+        "received": 6771,
+        "pdr": 96.72857142857143
+      },
+      "delta_pp": -2.357142857142861,
+      "legacy_dir": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2",
+      "full_dir": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2",
+      "legacy_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\result.txt",
+          "size": 444,
+          "mtime_ns": 1792222832661699700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\PDR.txt",
+          "size": 924,
+          "mtime_ns": 1792222831663197100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\ping_collision_summary.csv",
+          "size": 6154,
+          "mtime_ns": 1792222832654014600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\rerr_precursor_log.txt",
+          "size": 13682,
+          "mtime_ns": 1792222832716237800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\rerr_debug.txt",
+          "size": 15948,
+          "mtime_ns": 1792222832714228700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\aodv_rerr_fanout_log.csv",
+          "size": 19331,
+          "mtime_ns": 1792222832687347900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\aodv_precursor_log.csv",
+          "size": 144307,
+          "mtime_ns": 1792222832680517400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 372411,
+          "mtime_ns": 1792222832676339700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 386977,
+          "mtime_ns": 1792222832714228700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\aodv_cbr_rrep_decisions.csv",
+          "size": 413024,
+          "mtime_ns": 1792222832673727400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 693669,
+          "mtime_ns": 1792222832687347900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\aodv_control_log.csv",
+          "size": 729224,
+          "mtime_ns": 1792222832680517400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\aodv_route_graph_log.csv",
+          "size": 966985,
+          "mtime_ns": 1792222832694919000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\aodv_summary_1s.csv",
+          "size": 1125327,
+          "mtime_ns": 1792222832709782400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\aodv_route_cause_events.csv",
+          "size": 1192464,
+          "mtime_ns": 1792222832694919000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\cbr.csv",
+          "size": 1214646,
+          "mtime_ns": 1792222832659517900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\ping_trace_log.csv",
+          "size": 2146429,
+          "mtime_ns": 1792222832669216600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\9\\seed#2\\aodv_routing_table_snapshot.csv",
+          "size": 3804273,
+          "mtime_ns": 1792222832707123200,
+          "nul_count": 0
+        }
+      ],
+      "full_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\result.txt",
+          "size": 443,
+          "mtime_ns": 1792187579272157600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\PDR.txt",
+          "size": 929,
+          "mtime_ns": 1792187218975758700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\ping_collision_summary.csv",
+          "size": 6259,
+          "mtime_ns": 1792187578774635300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\rerr_debug.txt",
+          "size": 28574,
+          "mtime_ns": 1792187633009075500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\rerr_precursor_log.txt",
+          "size": 35320,
+          "mtime_ns": 1792187633011080700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\aodv_rerr_fanout_log.csv",
+          "size": 42055,
+          "mtime_ns": 1792187596635116300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\aodv_precursor_log.csv",
+          "size": 88778,
+          "mtime_ns": 1792187594016713800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 381919,
+          "mtime_ns": 1792187586324237900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 396617,
+          "mtime_ns": 1792187633002818300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 704107,
+          "mtime_ns": 1792187596634102800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\aodv_summary_1s.csv",
+          "size": 1126842,
+          "mtime_ns": 1792187631742606700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\cbr.csv",
+          "size": 1231078,
+          "mtime_ns": 1792187579270153500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\aodv_cbr_rrep_decisions.csv",
+          "size": 1677938,
+          "mtime_ns": 1792187582797631700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\ping_trace_log.csv",
+          "size": 2291071,
+          "mtime_ns": 1792187580517466800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\aodv_control_log.csv",
+          "size": 2586295,
+          "mtime_ns": 1792187594016713800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\aodv_route_cause_events.csv",
+          "size": 3398634,
+          "mtime_ns": 1792187618184751900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\aodv_route_graph_log.csv",
+          "size": 3598300,
+          "mtime_ns": 1792187622384205100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\aodv_routing_table_snapshot.csv",
+          "size": 12236930,
+          "mtime_ns": 1792187631728586700,
+          "nul_count": 0
+        }
+      ]
+    },
+    {
+      "d": 70,
+      "v": 10,
+      "n": 7,
+      "seed": 3,
+      "quadrant": "Q4",
+      "legacy": {
+        "sent": 7000,
+        "received": 996,
+        "pdr": 14.228571428571428
+      },
+      "full": {
+        "sent": 7000,
+        "received": 854,
+        "pdr": 12.2
+      },
+      "delta_pp": -2.0285714285714285,
+      "legacy_dir": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3",
+      "full_dir": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3",
+      "legacy_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\result.txt",
+          "size": 435,
+          "mtime_ns": 1792223408181763800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\PDR.txt",
+          "size": 881,
+          "mtime_ns": 1792223403218764700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\ping_collision_summary.csv",
+          "size": 6222,
+          "mtime_ns": 1792223408171499300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 385569,
+          "mtime_ns": 1792223408238384800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 399115,
+          "mtime_ns": 1792223408612108400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\rerr_debug.txt",
+          "size": 518087,
+          "mtime_ns": 1792223408612108400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 704948,
+          "mtime_ns": 1792223408312860500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\aodv_rerr_fanout_log.csv",
+          "size": 950231,
+          "mtime_ns": 1792223408325754800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\aodv_summary_1s.csv",
+          "size": 1140163,
+          "mtime_ns": 1792223408607617300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\rerr_precursor_log.txt",
+          "size": 1210378,
+          "mtime_ns": 1792223408612108400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\cbr.csv",
+          "size": 1304830,
+          "mtime_ns": 1792223408181763800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\ping_trace_log.csv",
+          "size": 2340428,
+          "mtime_ns": 1792223408186184100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\aodv_precursor_log.csv",
+          "size": 4871817,
+          "mtime_ns": 1792223408312860500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\aodv_cbr_rrep_decisions.csv",
+          "size": 16808248,
+          "mtime_ns": 1792223408233335000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\aodv_route_cause_events.csv",
+          "size": 24438153,
+          "mtime_ns": 1792223408389505100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\aodv_control_log.csv",
+          "size": 27898049,
+          "mtime_ns": 1792223408310084600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\aodv_route_graph_log.csv",
+          "size": 31686409,
+          "mtime_ns": 1792223408468640700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\7\\seed#3\\aodv_routing_table_snapshot.csv",
+          "size": 52254642,
+          "mtime_ns": 1792223408604081200,
+          "nul_count": 0
+        }
+      ],
+      "full_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\result.txt",
+          "size": 438,
+          "mtime_ns": 1792187938456531500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\PDR.txt",
+          "size": 892,
+          "mtime_ns": 1792187936452622200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\ping_collision_summary.csv",
+          "size": 6151,
+          "mtime_ns": 1792187937916087200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\rerr_debug.txt",
+          "size": 100969,
+          "mtime_ns": 1792187941334359300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\rerr_precursor_log.txt",
+          "size": 137720,
+          "mtime_ns": 1792187941334359300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\aodv_rerr_fanout_log.csv",
+          "size": 157437,
+          "mtime_ns": 1792187940698395000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\aodv_precursor_log.csv",
+          "size": 206750,
+          "mtime_ns": 1792187940383138500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 382696,
+          "mtime_ns": 1792187940052649500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 397588,
+          "mtime_ns": 1792187941334359300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 704709,
+          "mtime_ns": 1792187940698395000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\aodv_summary_1s.csv",
+          "size": 1131166,
+          "mtime_ns": 1792187941134175400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\cbr.csv",
+          "size": 1221048,
+          "mtime_ns": 1792187938447149100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\ping_trace_log.csv",
+          "size": 2346203,
+          "mtime_ns": 1792187939096831700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\aodv_cbr_rrep_decisions.csv",
+          "size": 4874880,
+          "mtime_ns": 1792187939745192700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\aodv_control_log.csv",
+          "size": 7742977,
+          "mtime_ns": 1792187940383138500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\aodv_route_cause_events.csv",
+          "size": 9000820,
+          "mtime_ns": 1792187941041119100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\aodv_route_graph_log.csv",
+          "size": 10088998,
+          "mtime_ns": 1792187941056990500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\aodv_routing_table_snapshot.csv",
+          "size": 30027350,
+          "mtime_ns": 1792187941130586400,
+          "nul_count": 0
+        }
+      ]
+    },
+    {
+      "d": 120,
+      "v": 20,
+      "n": 5,
+      "seed": 3,
+      "quadrant": "Q1",
+      "legacy": {
+        "sent": 7000,
+        "received": 2923,
+        "pdr": 41.75714285714286
+      },
+      "full": {
+        "sent": 7000,
+        "received": 2385,
+        "pdr": 34.07142857142857
+      },
+      "delta_pp": -7.68571428571429,
+      "legacy_dir": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3",
+      "full_dir": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3",
+      "legacy_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\result.txt",
+          "size": 439,
+          "mtime_ns": 1792305119430448900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\PDR.txt",
+          "size": 901,
+          "mtime_ns": 1792305073976980000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\ping_collision_summary.csv",
+          "size": 10563,
+          "mtime_ns": 1792305119426406000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 643291,
+          "mtime_ns": 1792305119565706900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 662579,
+          "mtime_ns": 1792305120402872900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\rerr_debug.txt",
+          "size": 1155416,
+          "mtime_ns": 1792305120406388300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 1165552,
+          "mtime_ns": 1792305119774888600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\aodv_summary_1s.csv",
+          "size": 1868644,
+          "mtime_ns": 1792305120398730700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\aodv_rerr_fanout_log.csv",
+          "size": 1947389,
+          "mtime_ns": 1792305119776893700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\rerr_precursor_log.txt",
+          "size": 2270656,
+          "mtime_ns": 1792305120414437300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\cbr.csv",
+          "size": 2312140,
+          "mtime_ns": 1792305119430448900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\ping_trace_log.csv",
+          "size": 2312566,
+          "mtime_ns": 1792305119439596900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\aodv_precursor_log.csv",
+          "size": 12821844,
+          "mtime_ns": 1792305119770862100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\aodv_cbr_rrep_decisions.csv",
+          "size": 50122471,
+          "mtime_ns": 1792305119561693900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\aodv_route_cause_events.csv",
+          "size": 67056838,
+          "mtime_ns": 1792305119938722600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\aodv_control_log.csv",
+          "size": 80375451,
+          "mtime_ns": 1792305119749759300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\aodv_route_graph_log.csv",
+          "size": 89983058,
+          "mtime_ns": 1792305120139389200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#120\\v#20\\5\\seed#3\\aodv_routing_table_snapshot.csv",
+          "size": 113112137,
+          "mtime_ns": 1792305120393708100,
+          "nul_count": 0
+        }
+      ],
+      "full_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\result.txt",
+          "size": 444,
+          "mtime_ns": 1792142262525223900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\PDR.txt",
+          "size": 900,
+          "mtime_ns": 1792142255967632400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\ping_collision_summary.csv",
+          "size": 10693,
+          "mtime_ns": 1792142262514070000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 632063,
+          "mtime_ns": 1792142262629549400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 654419,
+          "mtime_ns": 1792142263920792000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\rerr_debug.txt",
+          "size": 674866,
+          "mtime_ns": 1792142263928437400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 1157710,
+          "mtime_ns": 1792142262780790100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\aodv_rerr_fanout_log.csv",
+          "size": 1441679,
+          "mtime_ns": 1792142262780790100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\aodv_summary_1s.csv",
+          "size": 1867891,
+          "mtime_ns": 1792142263434256000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\rerr_precursor_log.txt",
+          "size": 1960281,
+          "mtime_ns": 1792142263931601300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\cbr.csv",
+          "size": 2316448,
+          "mtime_ns": 1792142262525223900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\ping_trace_log.csv",
+          "size": 2489237,
+          "mtime_ns": 1792142262531730600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\aodv_precursor_log.csv",
+          "size": 4046924,
+          "mtime_ns": 1792142262780790100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\aodv_cbr_rrep_decisions.csv",
+          "size": 32544974,
+          "mtime_ns": 1792142262626377600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\aodv_control_log.csv",
+          "size": 50726194,
+          "mtime_ns": 1792142262765581300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\aodv_route_cause_events.csv",
+          "size": 52740703,
+          "mtime_ns": 1792142262931011800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\aodv_route_graph_log.csv",
+          "size": 66939381,
+          "mtime_ns": 1792142263099522700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#0, 21_0, 19_result\\q_sweep\\d#120\\v#20\\5\\seed#3\\aodv_routing_table_snapshot.csv",
+          "size": 131758115,
+          "mtime_ns": 1792142263429791700,
+          "nul_count": 0
+        }
+      ]
+    },
+    {
+      "d": 70,
+      "v": 10,
+      "n": 0,
+      "seed": 2,
+      "quadrant": "Q2",
+      "legacy": {
+        "sent": 7000,
+        "received": 5621,
+        "pdr": 80.3
+      },
+      "full": {
+        "sent": 7000,
+        "received": 5084,
+        "pdr": 72.62857142857143
+      },
+      "delta_pp": -7.671428571428564,
+      "legacy_dir": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2",
+      "full_dir": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2",
+      "legacy_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\result.txt",
+          "size": 441,
+          "mtime_ns": 1792222509578017300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\PDR.txt",
+          "size": 907,
+          "mtime_ns": 1792222499029149900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\ping_collision_summary.csv",
+          "size": 6180,
+          "mtime_ns": 1792222509571584000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\rerr_debug.txt",
+          "size": 107283,
+          "mtime_ns": 1792222509685377200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\rerr_precursor_log.txt",
+          "size": 141989,
+          "mtime_ns": 1792222509685377200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_rerr_fanout_log.csv",
+          "size": 153621,
+          "mtime_ns": 1792222509630499200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 374661,
+          "mtime_ns": 1792222509598795900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 389080,
+          "mtime_ns": 1792222509685377200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 696069,
+          "mtime_ns": 1792222509618898200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_precursor_log.csv",
+          "size": 905802,
+          "mtime_ns": 1792222509618898200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_summary_1s.csv",
+          "size": 1126742,
+          "mtime_ns": 1792222509678864300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\cbr.csv",
+          "size": 1234728,
+          "mtime_ns": 1792222509578017300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\ping_trace_log.csv",
+          "size": 2121650,
+          "mtime_ns": 1792222509585792900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_cbr_rrep_decisions.csv",
+          "size": 3458187,
+          "mtime_ns": 1792222509598795900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_route_cause_events.csv",
+          "size": 5147054,
+          "mtime_ns": 1792222509646246400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_control_log.csv",
+          "size": 5722841,
+          "mtime_ns": 1792222509618898200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_routing_table_snapshot.csv",
+          "size": 6317994,
+          "mtime_ns": 1792222509678864300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_route_graph_log.csv",
+          "size": 6567341,
+          "mtime_ns": 1792222509652210900,
+          "nul_count": 0
+        }
+      ],
+      "full_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\result.txt",
+          "size": 439,
+          "mtime_ns": 1792145412374351500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\PDR.txt",
+          "size": 909,
+          "mtime_ns": 1792145405965625000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\ping_collision_summary.csv",
+          "size": 6220,
+          "mtime_ns": 1792145412368351600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\rerr_debug.txt",
+          "size": 249103,
+          "mtime_ns": 1792145412651300500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 379453,
+          "mtime_ns": 1792145412485693600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 393811,
+          "mtime_ns": 1792145412651300500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\aodv_rerr_fanout_log.csv",
+          "size": 446808,
+          "mtime_ns": 1792145412518905500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\rerr_precursor_log.txt",
+          "size": 516951,
+          "mtime_ns": 1792145412651300500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 699738,
+          "mtime_ns": 1792145412518905500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\aodv_precursor_log.csv",
+          "size": 935751,
+          "mtime_ns": 1792145412515641600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\aodv_summary_1s.csv",
+          "size": 1130617,
+          "mtime_ns": 1792145412647191100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\cbr.csv",
+          "size": 1256933,
+          "mtime_ns": 1792145412373350300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\ping_trace_log.csv",
+          "size": 2282919,
+          "mtime_ns": 1792145412379067300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\aodv_cbr_rrep_decisions.csv",
+          "size": 8655513,
+          "mtime_ns": 1792145412482122700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\aodv_route_cause_events.csv",
+          "size": 13443202,
+          "mtime_ns": 1792145412561826400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\aodv_control_log.csv",
+          "size": 13643856,
+          "mtime_ns": 1792145412513630600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\aodv_route_graph_log.csv",
+          "size": 17569864,
+          "mtime_ns": 1792145412599880100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\0\\seed#2\\aodv_routing_table_snapshot.csv",
+          "size": 19204387,
+          "mtime_ns": 1792145412639572000,
+          "nul_count": 0
+        }
+      ]
+    },
+    {
+      "d": 70,
+      "v": 10,
+      "n": 5,
+      "seed": 1,
+      "quadrant": "Q2",
+      "legacy": {
+        "sent": 7000,
+        "received": 5733,
+        "pdr": 81.9
+      },
+      "full": {
+        "sent": 7000,
+        "received": 5366,
+        "pdr": 76.65714285714286
+      },
+      "delta_pp": -5.242857142857147,
+      "legacy_dir": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1",
+      "full_dir": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1",
+      "legacy_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\result.txt",
+          "size": 441,
+          "mtime_ns": 1792222393082158500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\PDR.txt",
+          "size": 936,
+          "mtime_ns": 1792222390740834700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\ping_collision_summary.csv",
+          "size": 6195,
+          "mtime_ns": 1792222393075990800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\rerr_debug.txt",
+          "size": 24398,
+          "mtime_ns": 1792222393152755500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\rerr_precursor_log.txt",
+          "size": 24727,
+          "mtime_ns": 1792222393153757000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_rerr_fanout_log.csv",
+          "size": 31514,
+          "mtime_ns": 1792222393106364400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_precursor_log.csv",
+          "size": 330234,
+          "mtime_ns": 1792222393106364400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 373803,
+          "mtime_ns": 1792222393101490300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 388494,
+          "mtime_ns": 1792222393152755500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 695131,
+          "mtime_ns": 1792222393106364400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_cbr_rrep_decisions.csv",
+          "size": 990856,
+          "mtime_ns": 1792222393094562400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_summary_1s.csv",
+          "size": 1127308,
+          "mtime_ns": 1792222393149753300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\cbr.csv",
+          "size": 1224734,
+          "mtime_ns": 1792222393075990800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_control_log.csv",
+          "size": 1728661,
+          "mtime_ns": 1792222393106364400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_route_graph_log.csv",
+          "size": 2247440,
+          "mtime_ns": 1792222393121499800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\ping_trace_log.csv",
+          "size": 2257114,
+          "mtime_ns": 1792222393090492000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_route_cause_events.csv",
+          "size": 2441999,
+          "mtime_ns": 1792222393115602500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_routing_table_snapshot.csv",
+          "size": 10162658,
+          "mtime_ns": 1792222393147240700,
+          "nul_count": 0
+        }
+      ],
+      "full_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\result.txt",
+          "size": 440,
+          "mtime_ns": 1792145207153568200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\PDR.txt",
+          "size": 903,
+          "mtime_ns": 1792145205110057300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\ping_collision_summary.csv",
+          "size": 6275,
+          "mtime_ns": 1792145207145657300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\rerr_debug.txt",
+          "size": 73308,
+          "mtime_ns": 1792145207277911500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\rerr_precursor_log.txt",
+          "size": 115631,
+          "mtime_ns": 1792145207278921000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\aodv_rerr_fanout_log.csv",
+          "size": 117759,
+          "mtime_ns": 1792145207191338200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\aodv_precursor_log.csv",
+          "size": 357870,
+          "mtime_ns": 1792145207185313200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 376151,
+          "mtime_ns": 1792145207173237200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 390921,
+          "mtime_ns": 1792145207276092200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 697685,
+          "mtime_ns": 1792145207189329300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\aodv_summary_1s.csv",
+          "size": 1130369,
+          "mtime_ns": 1792145207270512800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\cbr.csv",
+          "size": 1232760,
+          "mtime_ns": 1792145207148981700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\ping_trace_log.csv",
+          "size": 2364768,
+          "mtime_ns": 1792145207157979700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\aodv_cbr_rrep_decisions.csv",
+          "size": 2621819,
+          "mtime_ns": 1792145207171225300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\aodv_control_log.csv",
+          "size": 4329612,
+          "mtime_ns": 1792145207185313200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\aodv_route_cause_events.csv",
+          "size": 5425409,
+          "mtime_ns": 1792145207203375500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\aodv_route_graph_log.csv",
+          "size": 5713049,
+          "mtime_ns": 1792145207216842000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#70\\v#10\\5\\seed#1\\aodv_routing_table_snapshot.csv",
+          "size": 20487944,
+          "mtime_ns": 1792145207267148400,
+          "nul_count": 0
+        }
+      ]
+    },
+    {
+      "d": 100,
+      "v": 20,
+      "n": 6,
+      "seed": 2,
+      "quadrant": "Q2",
+      "legacy": {
+        "sent": 7000,
+        "received": 5878,
+        "pdr": 83.97142857142858
+      },
+      "full": {
+        "sent": 7000,
+        "received": 5548,
+        "pdr": 79.25714285714285
+      },
+      "delta_pp": -4.714285714285722,
+      "legacy_dir": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2",
+      "full_dir": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2",
+      "legacy_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\result.txt",
+          "size": 443,
+          "mtime_ns": 1792255839495301300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\PDR.txt",
+          "size": 894,
+          "mtime_ns": 1792255837608589400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\ping_collision_summary.csv",
+          "size": 8848,
+          "mtime_ns": 1792255839270741200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\rerr_debug.txt",
+          "size": 450367,
+          "mtime_ns": 1792255842820817400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 528631,
+          "mtime_ns": 1792255841232247600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 548028,
+          "mtime_ns": 1792255842818817300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_rerr_fanout_log.csv",
+          "size": 675277,
+          "mtime_ns": 1792255842232247500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\rerr_precursor_log.txt",
+          "size": 698084,
+          "mtime_ns": 1792255842822981200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 975334,
+          "mtime_ns": 1792255842229248600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_summary_1s.csv",
+          "size": 1574226,
+          "mtime_ns": 1792255842658013700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\cbr.csv",
+          "size": 1812253,
+          "mtime_ns": 1792255839492299800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\ping_trace_log.csv",
+          "size": 2324130,
+          "mtime_ns": 1792255839879604800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_precursor_log.csv",
+          "size": 3982580,
+          "mtime_ns": 1792255841825432000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_cbr_rrep_decisions.csv",
+          "size": 14785634,
+          "mtime_ns": 1792255840890837800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_route_cause_events.csv",
+          "size": 21312401,
+          "mtime_ns": 1792255842467595400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_control_log.csv",
+          "size": 24328980,
+          "mtime_ns": 1792255841798403800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_route_graph_log.csv",
+          "size": 26274197,
+          "mtime_ns": 1792255842525146100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_routing_table_snapshot.csv",
+          "size": 56445093,
+          "mtime_ns": 1792255842654013900,
+          "nul_count": 0
+        }
+      ],
+      "full_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\result.txt",
+          "size": 445,
+          "mtime_ns": 1792149727089054200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\PDR.txt",
+          "size": 893,
+          "mtime_ns": 1792149725699521100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\rerr_precursor_log.txt",
+          "size": 2665,
+          "mtime_ns": 1792149727140728200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\rerr_debug.txt",
+          "size": 3608,
+          "mtime_ns": 1792149727139666000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\aodv_rerr_fanout_log.csv",
+          "size": 4757,
+          "mtime_ns": 1792149727109108400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\aodv_precursor_log.csv",
+          "size": 8572,
+          "mtime_ns": 1792149727109108400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\ping_collision_summary.csv",
+          "size": 8618,
+          "mtime_ns": 1792149727076036300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\aodv_cbr_rrep_decisions.csv",
+          "size": 514499,
+          "mtime_ns": 1792149727099153500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 514779,
+          "mtime_ns": 1792149727106262100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 534782,
+          "mtime_ns": 1792149727129607700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\aodv_control_log.csv",
+          "size": 823401,
+          "mtime_ns": 1792149727109108400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 961706,
+          "mtime_ns": 1792149727109108400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\aodv_route_graph_log.csv",
+          "size": 1102778,
+          "mtime_ns": 1792149727109108400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\aodv_summary_1s.csv",
+          "size": 1563659,
+          "mtime_ns": 1792149727129607700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\aodv_route_cause_events.csv",
+          "size": 1569612,
+          "mtime_ns": 1792149727109108400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\cbr.csv",
+          "size": 1695820,
+          "mtime_ns": 1792149727089054200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\ping_trace_log.csv",
+          "size": 2230203,
+          "mtime_ns": 1792149727093498900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\full\\full#21, 33_19, 32_result\\q_sweep\\d#100\\v#20\\6\\seed#2\\aodv_routing_table_snapshot.csv",
+          "size": 5325726,
+          "mtime_ns": 1792149727129607700,
+          "nul_count": 0
+        }
+      ]
+    },
+    {
+      "matched_decline": 8,
+      "d": 70,
+      "v": 10,
+      "n": 0,
+      "seed": 2,
+      "quadrant": "Q4",
+      "legacy_dir": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2",
+      "full_dir": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2",
+      "legacy": {
+        "sent": 7000,
+        "received": 5621,
+        "pdr": 80.3
+      },
+      "full": {
+        "sent": 7000,
+        "received": 6517,
+        "pdr": 93.1
+      },
+      "delta_pp": 12.799999999999997,
+      "legacy_audit_case": 8,
+      "full_files": [
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/result.txt",
+          "size": 441,
+          "mtime_ns": "1792187035781785400",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/PDR.txt",
+          "size": 912,
+          "mtime_ns": "1792187034440528000",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/rerr_precursor_log.txt",
+          "size": 1908,
+          "mtime_ns": "1792187038718261700",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/rerr_debug.txt",
+          "size": 2398,
+          "mtime_ns": "1792187038718261700",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/aodv_rerr_fanout_log.csv",
+          "size": 2811,
+          "mtime_ns": "1792187037709126500",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/ping_collision_summary.csv",
+          "size": 6154,
+          "mtime_ns": "1792187035639447300",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/aodv_precursor_log.csv",
+          "size": 14554,
+          "mtime_ns": "1792187037389579900",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/aodv_cbr_rrep_metrics_1s.csv",
+          "size": 378367,
+          "mtime_ns": "1792187037052270100",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 392962,
+          "mtime_ns": "1792187038718261700",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/aodv_cbr_rrep_decisions.csv",
+          "size": 415545,
+          "mtime_ns": "1792187036742329500",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/aodv_control_log.csv",
+          "size": 631093,
+          "mtime_ns": "1792187037389579900",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/aodv_radio_state_diagnosis_1s.csv",
+          "size": 699642,
+          "mtime_ns": "1792187037709126500",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/aodv_route_graph_log.csv",
+          "size": 886085,
+          "mtime_ns": "1792187038032757400",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/aodv_route_cause_events.csv",
+          "size": 1025096,
+          "mtime_ns": "1792187038030748600",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/aodv_summary_1s.csv",
+          "size": 1125107,
+          "mtime_ns": "1792187038041288700",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/cbr.csv",
+          "size": 1208482,
+          "mtime_ns": "1792187035781785400",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/aodv_routing_table_snapshot.csv",
+          "size": 2016875,
+          "mtime_ns": "1792187038036773100",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/0/seed#2/ping_trace_log.csv",
+          "size": 2109210,
+          "mtime_ns": "1792187036108855200",
+          "nul_count": 0
+        }
+      ],
+      "legacy_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\result.txt",
+          "size": 441,
+          "mtime_ns": 1792222509578017300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\PDR.txt",
+          "size": 907,
+          "mtime_ns": 1792222499029149900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\ping_collision_summary.csv",
+          "size": 6180,
+          "mtime_ns": 1792222509571584000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\rerr_debug.txt",
+          "size": 107283,
+          "mtime_ns": 1792222509685377200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\rerr_precursor_log.txt",
+          "size": 141989,
+          "mtime_ns": 1792222509685377200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_rerr_fanout_log.csv",
+          "size": 153621,
+          "mtime_ns": 1792222509630499200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 374661,
+          "mtime_ns": 1792222509598795900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 389080,
+          "mtime_ns": 1792222509685377200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 696069,
+          "mtime_ns": 1792222509618898200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_precursor_log.csv",
+          "size": 905802,
+          "mtime_ns": 1792222509618898200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_summary_1s.csv",
+          "size": 1126742,
+          "mtime_ns": 1792222509678864300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\cbr.csv",
+          "size": 1234728,
+          "mtime_ns": 1792222509578017300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\ping_trace_log.csv",
+          "size": 2121650,
+          "mtime_ns": 1792222509585792900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_cbr_rrep_decisions.csv",
+          "size": 3458187,
+          "mtime_ns": 1792222509598795900,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_route_cause_events.csv",
+          "size": 5147054,
+          "mtime_ns": 1792222509646246400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_control_log.csv",
+          "size": 5722841,
+          "mtime_ns": 1792222509618898200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_routing_table_snapshot.csv",
+          "size": 6317994,
+          "mtime_ns": 1792222509678864300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#2\\aodv_route_graph_log.csv",
+          "size": 6567341,
+          "mtime_ns": 1792222509652210900,
+          "nul_count": 0
+        }
+      ]
+    },
+    {
+      "matched_decline": 9,
+      "d": 70,
+      "v": 10,
+      "n": 5,
+      "seed": 1,
+      "quadrant": "Q4",
+      "legacy_dir": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1",
+      "full_dir": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1",
+      "legacy": {
+        "sent": 7000,
+        "received": 5733,
+        "pdr": 81.9
+      },
+      "full": {
+        "sent": 7000,
+        "received": 6416,
+        "pdr": 91.65714285714286
+      },
+      "delta_pp": 9.757142857142853,
+      "legacy_audit_case": 9,
+      "full_files": [
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/result.txt",
+          "size": 443,
+          "mtime_ns": "1792186433617321400",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/PDR.txt",
+          "size": 925,
+          "mtime_ns": "1792186423912171100",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/ping_collision_summary.csv",
+          "size": 6212,
+          "mtime_ns": "1792186427861807100",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/rerr_debug.txt",
+          "size": 37405,
+          "mtime_ns": "1792186554430818900",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/rerr_precursor_log.txt",
+          "size": 51528,
+          "mtime_ns": "1792186554430818900",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/aodv_rerr_fanout_log.csv",
+          "size": 56901,
+          "mtime_ns": "1792186554346812900",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/aodv_precursor_log.csv",
+          "size": 155213,
+          "mtime_ns": "1792186550422848500",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/aodv_cbr_rrep_metrics_1s.csv",
+          "size": 381456,
+          "mtime_ns": "1792186526310669400",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 396141,
+          "mtime_ns": "1792186554430122100",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/aodv_radio_state_diagnosis_1s.csv",
+          "size": 702362,
+          "mtime_ns": "1792186554344809400",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/aodv_summary_1s.csv",
+          "size": 1128161,
+          "mtime_ns": "1792186554424533000",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/cbr.csv",
+          "size": 1228351,
+          "mtime_ns": "1792186433617321400",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/aodv_cbr_rrep_decisions.csv",
+          "size": 1839665,
+          "mtime_ns": "1792186520712461200",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/ping_trace_log.csv",
+          "size": 2271220,
+          "mtime_ns": "1792186508039733600",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/aodv_control_log.csv",
+          "size": 2883047,
+          "mtime_ns": "1792186550411304300",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/aodv_route_cause_events.csv",
+          "size": 3786538,
+          "mtime_ns": "1792186554371226300",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/aodv_route_graph_log.csv",
+          "size": 3963295,
+          "mtime_ns": "1792186554379756500",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#70/v#10/5/seed#1/aodv_routing_table_snapshot.csv",
+          "size": 13035214,
+          "mtime_ns": "1792186554418460700",
+          "nul_count": 0
+        }
+      ],
+      "legacy_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\result.txt",
+          "size": 441,
+          "mtime_ns": 1792222393082158500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\PDR.txt",
+          "size": 936,
+          "mtime_ns": 1792222390740834700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\ping_collision_summary.csv",
+          "size": 6195,
+          "mtime_ns": 1792222393075990800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\rerr_debug.txt",
+          "size": 24398,
+          "mtime_ns": 1792222393152755500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\rerr_precursor_log.txt",
+          "size": 24727,
+          "mtime_ns": 1792222393153757000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_rerr_fanout_log.csv",
+          "size": 31514,
+          "mtime_ns": 1792222393106364400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_precursor_log.csv",
+          "size": 330234,
+          "mtime_ns": 1792222393106364400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 373803,
+          "mtime_ns": 1792222393101490300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 388494,
+          "mtime_ns": 1792222393152755500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 695131,
+          "mtime_ns": 1792222393106364400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_cbr_rrep_decisions.csv",
+          "size": 990856,
+          "mtime_ns": 1792222393094562400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_summary_1s.csv",
+          "size": 1127308,
+          "mtime_ns": 1792222393149753300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\cbr.csv",
+          "size": 1224734,
+          "mtime_ns": 1792222393075990800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_control_log.csv",
+          "size": 1728661,
+          "mtime_ns": 1792222393106364400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_route_graph_log.csv",
+          "size": 2247440,
+          "mtime_ns": 1792222393121499800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\ping_trace_log.csv",
+          "size": 2257114,
+          "mtime_ns": 1792222393090492000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_route_cause_events.csv",
+          "size": 2441999,
+          "mtime_ns": 1792222393115602500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\5\\seed#1\\aodv_routing_table_snapshot.csv",
+          "size": 10162658,
+          "mtime_ns": 1792222393147240700,
+          "nul_count": 0
+        }
+      ]
+    },
+    {
+      "matched_decline": 10,
+      "d": 100,
+      "v": 20,
+      "n": 6,
+      "seed": 2,
+      "quadrant": "Q4",
+      "legacy_dir": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2",
+      "full_dir": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2",
+      "legacy": {
+        "sent": 7000,
+        "received": 5878,
+        "pdr": 83.97142857142858
+      },
+      "full": {
+        "sent": 7000,
+        "received": 6825,
+        "pdr": 97.5
+      },
+      "delta_pp": 13.528571428571425,
+      "legacy_audit_case": 10,
+      "full_files": [
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/result.txt",
+          "size": 439,
+          "mtime_ns": "1792198933342819300",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/PDR.txt",
+          "size": 932,
+          "mtime_ns": "1792198929846050900",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/rerr_precursor_log.txt",
+          "size": 7576,
+          "mtime_ns": "1792198937186817900",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/rerr_debug.txt",
+          "size": 8273,
+          "mtime_ns": "1792198937186817900",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/ping_collision_summary.csv",
+          "size": 8895,
+          "mtime_ns": "1792198932985117700",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/aodv_rerr_fanout_log.csv",
+          "size": 10769,
+          "mtime_ns": "1792198936419124000",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/aodv_precursor_log.csv",
+          "size": 43019,
+          "mtime_ns": "1792198935973646000",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/aodv_cbr_rrep_metrics_1s.csv",
+          "size": 530071,
+          "mtime_ns": "1792198935521270800",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 550187,
+          "mtime_ns": "1792198937186817900",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/aodv_radio_state_diagnosis_1s.csv",
+          "size": 977417,
+          "mtime_ns": "1792198936417118600",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/aodv_cbr_rrep_decisions.csv",
+          "size": 1413430,
+          "mtime_ns": "1792198935069867800",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/aodv_summary_1s.csv",
+          "size": 1563244,
+          "mtime_ns": "1792198936864694400",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/cbr.csv",
+          "size": 1739765,
+          "mtime_ns": "1792198933342819300",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/aodv_control_log.csv",
+          "size": 2096267,
+          "mtime_ns": "1792198935973646000",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/ping_trace_log.csv",
+          "size": 2283964,
+          "mtime_ns": "1792198933855687100",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/aodv_route_graph_log.csv",
+          "size": 2955472,
+          "mtime_ns": "1792198936835558100",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/aodv_route_cause_events.csv",
+          "size": 3143377,
+          "mtime_ns": "1792198936829552300",
+          "nul_count": 0
+        },
+        {
+          "path": "D:/CBP_2026.10.17/i#1/full/full#44, 101_43, 101_result/q_sweep/d#100/v#20/6/seed#2/aodv_routing_table_snapshot.csv",
+          "size": 13206482,
+          "mtime_ns": "1792198936862675600",
+          "nul_count": 0
+        }
+      ],
+      "legacy_files": [
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\result.txt",
+          "size": 443,
+          "mtime_ns": 1792255839495301300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\PDR.txt",
+          "size": 894,
+          "mtime_ns": 1792255837608589400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\ping_collision_summary.csv",
+          "size": 8848,
+          "mtime_ns": 1792255839270741200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\rerr_debug.txt",
+          "size": 450367,
+          "mtime_ns": 1792255842820817400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_cbr_rrep_metrics_1s.csv",
+          "size": 528631,
+          "mtime_ns": 1792255841232247600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_transmission_failure_diagnosis_1s.csv",
+          "size": 548028,
+          "mtime_ns": 1792255842818817300,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_rerr_fanout_log.csv",
+          "size": 675277,
+          "mtime_ns": 1792255842232247500,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\rerr_precursor_log.txt",
+          "size": 698084,
+          "mtime_ns": 1792255842822981200,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_radio_state_diagnosis_1s.csv",
+          "size": 975334,
+          "mtime_ns": 1792255842229248600,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_summary_1s.csv",
+          "size": 1574226,
+          "mtime_ns": 1792255842658013700,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\cbr.csv",
+          "size": 1812253,
+          "mtime_ns": 1792255839492299800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\ping_trace_log.csv",
+          "size": 2324130,
+          "mtime_ns": 1792255839879604800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_precursor_log.csv",
+          "size": 3982580,
+          "mtime_ns": 1792255841825432000,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_cbr_rrep_decisions.csv",
+          "size": 14785634,
+          "mtime_ns": 1792255840890837800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_route_cause_events.csv",
+          "size": 21312401,
+          "mtime_ns": 1792255842467595400,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_control_log.csv",
+          "size": 24328980,
+          "mtime_ns": 1792255841798403800,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_route_graph_log.csv",
+          "size": 26274197,
+          "mtime_ns": 1792255842525146100,
+          "nul_count": 0
+        },
+        {
+          "path": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#100\\v#20\\6\\seed#2\\aodv_routing_table_snapshot.csv",
+          "size": 56445093,
+          "mtime_ns": 1792255842654013900,
+          "nul_count": 0
+        }
+      ]
+    }
+  ],
+  "selection": "10 declines plus same-node/seed Q4 gains for original C08-C10",
+  "nul_scope": "all 18 CSV/TXT per original run; 23 unique folders"
+}
