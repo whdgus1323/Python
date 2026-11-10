@@ -1,0 +1,535 @@
+[
+  {
+    "key": [
+      70,
+      10,
+      0,
+      4
+    ],
+    "legacy_pdr": 90.4,
+    "q4_pdr": 82.1,
+    "legacy_only_replies": 658,
+    "q4_only_replies": 77,
+    "net_reply_decrease": 581
+  },
+  {
+    "key": [
+      70,
+      10,
+      5,
+      3
+    ],
+    "legacy_pdr": 33.17142857142857,
+    "q4_pdr": 30.785714285714285,
+    "legacy_only_replies": 909,
+    "q4_only_replies": 742,
+    "net_reply_decrease": 167
+  },
+  {
+    "key": [
+      70,
+      10,
+      7,
+      3
+    ],
+    "legacy_pdr": 14.228571428571428,
+    "q4_pdr": 12.2,
+    "legacy_only_replies": 961,
+    "q4_only_replies": 819,
+    "net_reply_decrease": 142
+  },
+  {
+    "key": [
+      70,
+      10,
+      8,
+      1
+    ],
+    "legacy_pdr": 7.4,
+    "q4_pdr": 4.557142857142857,
+    "legacy_only_replies": 512,
+    "q4_only_replies": 313,
+    "net_reply_decrease": 199
+  },
+  {
+    "key": [
+      70,
+      10,
+      9,
+      2
+    ],
+    "legacy_pdr": 99.08571428571429,
+    "q4_pdr": 96.72857142857143,
+    "legacy_only_replies": 226,
+    "q4_only_replies": 61,
+    "net_reply_decrease": 165
+  },
+  {
+    "key": [
+      70,
+      20,
+      3,
+      3
+    ],
+    "legacy_pdr": 92.07142857142857,
+    "q4_pdr": 83.32857142857142,
+    "legacy_only_replies": 1111,
+    "q4_only_replies": 499,
+    "net_reply_decrease": 612
+  },
+  {
+    "key": [
+      70,
+      20,
+      3,
+      4
+    ],
+    "legacy_pdr": 81.94285714285714,
+    "q4_pdr": 57.55714285714286,
+    "legacy_only_replies": 2083,
+    "q4_only_replies": 376,
+    "net_reply_decrease": 1707
+  },
+  {
+    "key": [
+      70,
+      20,
+      6,
+      1
+    ],
+    "legacy_pdr": 90.0,
+    "q4_pdr": 89.97142857142858,
+    "legacy_only_replies": 397,
+    "q4_only_replies": 395,
+    "net_reply_decrease": 2
+  },
+  {
+    "key": [
+      70,
+      20,
+      6,
+      3
+    ],
+    "legacy_pdr": 97.37142857142857,
+    "q4_pdr": 25.714285714285715,
+    "legacy_only_replies": 5061,
+    "q4_only_replies": 45,
+    "net_reply_decrease": 5016
+  },
+  {
+    "key": [
+      70,
+      20,
+      6,
+      5
+    ],
+    "legacy_pdr": 95.18571428571428,
+    "q4_pdr": 95.1,
+    "legacy_only_replies": 29,
+    "q4_only_replies": 23,
+    "net_reply_decrease": 6
+  },
+  {
+    "key": [
+      70,
+      20,
+      7,
+      1
+    ],
+    "legacy_pdr": 97.54285714285714,
+    "q4_pdr": 87.51428571428572,
+    "legacy_only_replies": 702,
+    "q4_only_replies": 0,
+    "net_reply_decrease": 702
+  },
+  {
+    "key": [
+      70,
+      30,
+      2,
+      3
+    ],
+    "legacy_pdr": 85.47142857142858,
+    "q4_pdr": 78.31428571428572,
+    "legacy_only_replies": 1294,
+    "q4_only_replies": 793,
+    "net_reply_decrease": 501
+  },
+  {
+    "key": [
+      100,
+      10,
+      0,
+      1
+    ],
+    "legacy_pdr": 80.31428571428572,
+    "q4_pdr": 77.84285714285714,
+    "legacy_only_replies": 719,
+    "q4_only_replies": 546,
+    "net_reply_decrease": 173
+  },
+  {
+    "key": [
+      100,
+      10,
+      0,
+      4
+    ],
+    "legacy_pdr": 73.35714285714286,
+    "q4_pdr": 60.5,
+    "legacy_only_replies": 900,
+    "q4_only_replies": 0,
+    "net_reply_decrease": 900
+  },
+  {
+    "key": [
+      100,
+      10,
+      3,
+      5
+    ],
+    "legacy_pdr": 42.72857142857143,
+    "q4_pdr": 10.514285714285714,
+    "legacy_only_replies": 2771,
+    "q4_only_replies": 516,
+    "net_reply_decrease": 2255
+  },
+  {
+    "key": [
+      100,
+      10,
+      4,
+      2
+    ],
+    "legacy_pdr": 94.48571428571428,
+    "q4_pdr": 78.22857142857143,
+    "legacy_only_replies": 1524,
+    "q4_only_replies": 386,
+    "net_reply_decrease": 1138
+  },
+  {
+    "key": [
+      100,
+      10,
+      7,
+      1
+    ],
+    "legacy_pdr": 10.642857142857142,
+    "q4_pdr": 8.428571428571429,
+    "legacy_only_replies": 657,
+    "q4_only_replies": 502,
+    "net_reply_decrease": 155
+  },
+  {
+    "key": [
+      100,
+      10,
+      9,
+      3
+    ],
+    "legacy_pdr": 93.62857142857143,
+    "q4_pdr": 93.6,
+    "legacy_only_replies": 3,
+    "q4_only_replies": 1,
+    "net_reply_decrease": 2
+  },
+  {
+    "key": [
+      100,
+      20,
+      9,
+      1
+    ],
+    "legacy_pdr": 42.4,
+    "q4_pdr": 34.34285714285714,
+    "legacy_only_replies": 1135,
+    "q4_only_replies": 571,
+    "net_reply_decrease": 564
+  },
+  {
+    "key": [
+      100,
+      20,
+      9,
+      5
+    ],
+    "legacy_pdr": 93.0,
+    "q4_pdr": 91.21428571428571,
+    "legacy_only_replies": 343,
+    "q4_only_replies": 218,
+    "net_reply_decrease": 125
+  },
+  {
+    "key": [
+      100,
+      30,
+      3,
+      2
+    ],
+    "legacy_pdr": 87.05714285714286,
+    "q4_pdr": 76.91428571428571,
+    "legacy_only_replies": 985,
+    "q4_only_replies": 275,
+    "net_reply_decrease": 710
+  },
+  {
+    "key": [
+      100,
+      30,
+      4,
+      3
+    ],
+    "legacy_pdr": 27.014285714285716,
+    "q4_pdr": 20.285714285714285,
+    "legacy_only_replies": 478,
+    "q4_only_replies": 7,
+    "net_reply_decrease": 471
+  },
+  {
+    "key": [
+      100,
+      30,
+      7,
+      3
+    ],
+    "legacy_pdr": 97.95714285714286,
+    "q4_pdr": 96.85714285714286,
+    "legacy_only_replies": 218,
+    "q4_only_replies": 141,
+    "net_reply_decrease": 77
+  },
+  {
+    "key": [
+      100,
+      30,
+      7,
+      4
+    ],
+    "legacy_pdr": 95.71428571428571,
+    "q4_pdr": 93.87142857142857,
+    "legacy_only_replies": 213,
+    "q4_only_replies": 84,
+    "net_reply_decrease": 129
+  },
+  {
+    "key": [
+      100,
+      30,
+      9,
+      3
+    ],
+    "legacy_pdr": 84.51428571428572,
+    "q4_pdr": 35.34285714285714,
+    "legacy_only_replies": 3445,
+    "q4_only_replies": 3,
+    "net_reply_decrease": 3442
+  },
+  {
+    "key": [
+      100,
+      30,
+      9,
+      5
+    ],
+    "legacy_pdr": 86.55714285714286,
+    "q4_pdr": 80.12857142857143,
+    "legacy_only_replies": 638,
+    "q4_only_replies": 188,
+    "net_reply_decrease": 450
+  },
+  {
+    "key": [
+      120,
+      10,
+      0,
+      4
+    ],
+    "legacy_pdr": 72.92857142857143,
+    "q4_pdr": 72.67142857142858,
+    "legacy_only_replies": 453,
+    "q4_only_replies": 435,
+    "net_reply_decrease": 18
+  },
+  {
+    "key": [
+      120,
+      10,
+      1,
+      2
+    ],
+    "legacy_pdr": 6.214285714285714,
+    "q4_pdr": 3.2714285714285714,
+    "legacy_only_replies": 321,
+    "q4_only_replies": 115,
+    "net_reply_decrease": 206
+  },
+  {
+    "key": [
+      120,
+      10,
+      9,
+      2
+    ],
+    "legacy_pdr": 97.78571428571429,
+    "q4_pdr": 96.98571428571428,
+    "legacy_only_replies": 148,
+    "q4_only_replies": 92,
+    "net_reply_decrease": 56
+  },
+  {
+    "key": [
+      120,
+      10,
+      9,
+      5
+    ],
+    "legacy_pdr": 99.34285714285714,
+    "q4_pdr": 96.37142857142857,
+    "legacy_only_replies": 253,
+    "q4_only_replies": 45,
+    "net_reply_decrease": 208
+  },
+  {
+    "key": [
+      120,
+      20,
+      6,
+      3
+    ],
+    "legacy_pdr": 88.38571428571429,
+    "q4_pdr": 88.17142857142858,
+    "legacy_only_replies": 476,
+    "q4_only_replies": 461,
+    "net_reply_decrease": 15
+  },
+  {
+    "key": [
+      120,
+      20,
+      6,
+      5
+    ],
+    "legacy_pdr": 97.75714285714285,
+    "q4_pdr": 91.32857142857142,
+    "legacy_only_replies": 498,
+    "q4_only_replies": 48,
+    "net_reply_decrease": 450
+  },
+  {
+    "key": [
+      120,
+      20,
+      9,
+      3
+    ],
+    "legacy_pdr": 97.42857142857143,
+    "q4_pdr": 89.52857142857142,
+    "legacy_only_replies": 553,
+    "q4_only_replies": 0,
+    "net_reply_decrease": 553
+  },
+  {
+    "key": [
+      120,
+      30,
+      1,
+      1
+    ],
+    "legacy_pdr": 3.4571428571428573,
+    "q4_pdr": 3.0714285714285716,
+    "legacy_only_replies": 201,
+    "q4_only_replies": 174,
+    "net_reply_decrease": 27
+  },
+  {
+    "key": [
+      120,
+      30,
+      4,
+      2
+    ],
+    "legacy_pdr": 12.17142857142857,
+    "q4_pdr": 6.5,
+    "legacy_only_replies": 568,
+    "q4_only_replies": 171,
+    "net_reply_decrease": 397
+  },
+  {
+    "key": [
+      120,
+      30,
+      5,
+      5
+    ],
+    "legacy_pdr": 14.985714285714286,
+    "q4_pdr": 1.2571428571428571,
+    "legacy_only_replies": 963,
+    "q4_only_replies": 2,
+    "net_reply_decrease": 961
+  },
+  {
+    "key": [
+      120,
+      30,
+      7,
+      1
+    ],
+    "legacy_pdr": 97.15714285714286,
+    "q4_pdr": 97.11428571428571,
+    "legacy_only_replies": 3,
+    "q4_only_replies": 0,
+    "net_reply_decrease": 3
+  },
+  {
+    "key": [
+      120,
+      30,
+      7,
+      3
+    ],
+    "legacy_pdr": 98.08571428571429,
+    "q4_pdr": 98.07142857142857,
+    "legacy_only_replies": 1,
+    "q4_only_replies": 0,
+    "net_reply_decrease": 1
+  },
+  {
+    "key": [
+      120,
+      30,
+      8,
+      1
+    ],
+    "legacy_pdr": 4.8428571428571425,
+    "q4_pdr": 1.7142857142857142,
+    "legacy_only_replies": 334,
+    "q4_only_replies": 115,
+    "net_reply_decrease": 219
+  },
+  {
+    "key": [
+      120,
+      30,
+      9,
+      3
+    ],
+    "legacy_pdr": 95.25714285714285,
+    "q4_pdr": 69.54285714285714,
+    "legacy_only_replies": 1803,
+    "q4_only_replies": 3,
+    "net_reply_decrease": 1800
+  },
+  {
+    "key": [
+      120,
+      30,
+      9,
+      4
+    ],
+    "legacy_pdr": 97.14285714285714,
+    "q4_pdr": 94.1,
+    "legacy_only_replies": 227,
+    "q4_only_replies": 14,
+    "net_reply_decrease": 213
+  }
+]

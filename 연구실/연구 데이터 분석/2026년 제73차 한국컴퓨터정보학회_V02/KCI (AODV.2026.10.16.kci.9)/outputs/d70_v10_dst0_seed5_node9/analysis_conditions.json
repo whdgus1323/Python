@@ -1,0 +1,18 @@
+{
+  "review": "2-8",
+  "vehicles": 70,
+  "speed_kmh": 10,
+  "destination": 0,
+  "seed": 5,
+  "node": "node[9]",
+  "anchor_after_s": 75.0,
+  "anchor_s": 76.23292306787,
+  "anchor_rule": "first logged RREP range block at selected node after configured time; no CBP-outcome selection",
+  "before_after_s": 1.0,
+  "metric": "physical-layer reception failure ratio with interference",
+  "metric_time_series_available": false,
+  "run_directories": {
+    "Legacy AODV": "D:\\CBP_2026.10.17\\i#1\\legacy\\d#70\\v#10\\0\\seed#5",
+    "CBP-AODV (Full Q4)": "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\0\\seed#5"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "key": [
+    70,
+    10,
+    7,
+    3
+  ],
+  "sequence": 3343,
+  "evidence_group": "Source: local link break",
+  "source_event": "ROUTE_INVALIDATE",
+  "source_reason": "local_link_break",
+  "packet": {
+    "seq": 3343.0,
+    "time": 63.43,
+    "legacy_reply": 67.6445041684,
+    "q4_reply": null,
+    "legacy_source_state": 1.0,
+    "q4_source_state": 0.0,
+    "outcome": -1.0,
+    "terminal_source_gap": 0.0,
+    "end_window": 0.0,
+    "context_id": 48.0,
+    "rrep_blocked": 3.0,
+    "route_selected": 0.0,
+    "blocked_only_context": 1.0,
+    "route_event_time": 63.42622371673
+  },
+  "route_snapshot": {
+    "evidence_group": "Source: local link break",
+    "forward_status": "inactive",
+    "forward_chain": "rsu[0]",
+    "issue_node": "rsu[0]",
+    "route_event": "ROUTE_INVALIDATE",
+    "route_reason": "local_link_break",
+    "reverse_snapshot_status": "complete",
+    "reverse_snapshot_chain": "node[7] > node[27] > rsu[0]"
+  },
+  "attempt": {
+    "context_id": 48.0,
+    "start": 63.43,
+    "stop": 63.75,
+    "rreq_receivers": 294.0,
+    "blocked": 3.0,
+    "allowed": 0.0,
+    "generated": 0.0,
+    "destination_reply": 0.0,
+    "matched_rrep": 0.0,
+    "route_selected": 0.0,
+    "first_block_time": 63.43394908942,
+    "first_block_cbp": 30.9299
+  }
+}
