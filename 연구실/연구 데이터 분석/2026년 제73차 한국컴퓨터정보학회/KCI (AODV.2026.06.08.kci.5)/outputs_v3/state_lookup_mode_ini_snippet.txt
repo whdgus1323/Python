@@ -1,0 +1,12 @@
+*.aodv.cbrBasedRrepEnabled = true
+*.aodv.cbrBasedRrepRangeEnabled = false
+*.aodv.cbrBasedRandomThresholdEnabled = false
+*.aodv.dlBasedRrepEnabled = false
+*.aodv.dlBucketBasedRrepEnabled = false
+*.aodv.treeBasedRrepEnabled = false
+*.aodv.stateLookupBasedRrepEnabled = true
+*.aodv.stateLookupBasedRrepNearestFallbackEnabled = true
+*.aodv.stateLookupBasedRrepCbrBinSize = 5
+*.aodv.stateLookupBasedRrepNeighborBinSize = 5
+*.aodv.stateLookupBasedRrepHopMax = 6
+*.aodv.stateLookupBasedRrepPolicyCsvPath = "D:/Github/Python/연구실/연구 데이터 분석/2026년 제73차 한국컴퓨터정보학회/KCI (AODV.2026.06.08.kci.5)/outputs_v3/policy_full_lookup.csv"

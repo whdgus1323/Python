@@ -1,0 +1,17 @@
+{
+  "feature_cols": [
+    "localCbr",
+    "neighborCount",
+    "hopCount",
+    "isDirectRoute"
+  ],
+  "use_direct_flag": true,
+  "dl_feature_set": "raw4",
+  "row_r2_low": 0.00995072640070338,
+  "row_r2_high": 0.007259719840088996,
+  "row_mae_low": 6.2173027992248535,
+  "row_mae_high": 10.541303634643555,
+  "best_val_loss": 1.326359510421753,
+  "epochs_trained": 30,
+  "row_r2_uniform": 0.008605223120396188
+}

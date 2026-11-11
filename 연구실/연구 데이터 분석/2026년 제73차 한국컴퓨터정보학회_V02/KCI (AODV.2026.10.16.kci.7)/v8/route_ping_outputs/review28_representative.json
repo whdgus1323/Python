@@ -1,0 +1,39 @@
+{
+  "case_key": [
+    70,
+    10,
+    0,
+    5
+  ],
+  "q4_context_index": 7,
+  "q4_reference_time": 79.50002875444,
+  "chosen_context_indices": [
+    7,
+    7,
+    5,
+    3,
+    7,
+    4
+  ],
+  "q4_context": {
+    "selection_time": 79.50002875444,
+    "context_id": 14.0,
+    "request_time": 79.24,
+    "window_sends": 4.0,
+    "window_replies": 4.0,
+    "onchain_generators": 1.0,
+    "inside_interval": 1.0,
+    "generator_cbp": 60.423885,
+    "context_delay_ms": 260.0287544400004,
+    "generator_time": 79.49961645086,
+    "paired_sequence": 4951.0,
+    "paired_send_time": 79.51,
+    "paired_reply_time": 79.85584989869
+  },
+  "q4_text": {
+    "chain_status": "complete",
+    "chain_nodes": "rsu[0] > node[9] > node[2] > node[0]",
+    "generator_nodes": "node[9]",
+    "generator_cbps": "60.4239"
+  }
+}

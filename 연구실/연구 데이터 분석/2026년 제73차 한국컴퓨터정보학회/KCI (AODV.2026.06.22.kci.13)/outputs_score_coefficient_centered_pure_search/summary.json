@@ -1,0 +1,18 @@
+{
+  "selection_mode": "grid_centered_pure_search",
+  "selected_aS": 2.0,
+  "selected_aF": 3.0,
+  "selected_aD": 0.02,
+  "selected_aR": 1.0,
+  "selected_aI": 0.25,
+  "selected_aX": 0.1,
+  "grid_center_distance": 0.0,
+  "teacher_states": 1635,
+  "unique_selected_pairs": 552,
+  "major_balance_cv": 0.2283764491581722,
+  "pair_entropy_norm": 0.9348884752880412,
+  "max_selected_pair_share": 0.0220183486238532,
+  "mean_gap_1_2": 0.6491575203783218,
+  "ambiguous_state_share": 0.5229357798165137,
+  "major_cv": 0.2283764479828941
+}

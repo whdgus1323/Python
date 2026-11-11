@@ -1,0 +1,52 @@
+{
+  "train_runs": [
+    4,
+    10,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    28
+  ],
+  "valid_runs": [
+    31,
+    35
+  ],
+  "test_runs": [
+    22,
+    25
+  ],
+  "per_run_sample": null,
+  "state_cbr_bin": 5,
+  "state_neighbor_bin": 5,
+  "min_pair_support": 5,
+  "score_tolerance": 0.2,
+  "score_success_weight": 2.0,
+  "score_fail_weight": 3.0,
+  "score_delay_weight": 0.02,
+  "score_rerr_weight": 1.0,
+  "score_invalidate_weight": 0.25,
+  "score_delete_weight": 0.1,
+  "full_rows": 40008619,
+  "teacher_states": 1742,
+  "train_rows": 31020875,
+  "valid_rows": 4143054,
+  "test_rows": 4810188,
+  "train_states": 1742,
+  "valid_states": 1670,
+  "test_states": 1691,
+  "row_r2_low": 0.9458892565641046,
+  "row_r2_high": 0.9485657903786576,
+  "row_mae_low": 0.8521960973739624,
+  "row_mae_high": 1.421371579170227,
+  "row_r2_uniform": 0.9472275234713812,
+  "state_r2_low": 0.8066887204961695,
+  "state_r2_high": 0.7852636612600172,
+  "state_mae_low": 1.8120821714401245,
+  "state_mae_high": 3.1567258834838867,
+  "eval_states": 1691,
+  "state_r2_uniform": 0.7959761908780933
+}

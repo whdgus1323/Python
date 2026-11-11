@@ -1,0 +1,51 @@
+[project]
+name = "keyword-sourcing-pro"
+version = "0.1.0"
+description = "상품 목록에서 구매대행 벤치마킹 후보를 선별하는 로컬 분석 도구"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "fastexcel>=0.18.0",
+    "numpy>=2.3.0",
+    "polars>=1.36.0",
+    "pyside6>=6.10.0",
+    "xlsxwriter>=3.2.0",
+]
+
+[build-system]
+requires = ["hatchling>=1.28.0"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/keyword_sourcing"]
+
+[dependency-groups]
+dev = [
+    "basedpyright>=1.31.0",
+    "pytest>=9.0.0",
+    "ruff>=0.14.0",
+]
+
+[tool.basedpyright]
+typeCheckingMode = "all"
+pythonVersion = "3.13"
+include = ["src", "desktop_app.py", "tests"]
+reportUnusedCallResult = "none"
+reportAny = "none"
+reportUnknownMemberType = "none"
+reportUnknownArgumentType = "none"
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+
+[tool.ruff.lint.per-file-ignores]
+"src/keyword_sourcing/desktop.py" = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = ["-ra"]
+pythonpath = ["src"]

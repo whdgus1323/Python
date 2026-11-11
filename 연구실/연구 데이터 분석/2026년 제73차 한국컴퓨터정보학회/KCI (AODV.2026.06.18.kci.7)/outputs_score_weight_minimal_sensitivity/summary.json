@@ -1,0 +1,16 @@
+{
+  "base_states": 1635,
+  "rebuilt_states": 1635,
+  "fail_tests": [
+    2.0,
+    3.0,
+    4.0
+  ],
+  "delay_tests": [
+    0.01,
+    0.02,
+    0.05
+  ],
+  "min_pair_support": 5,
+  "score_tolerance": 0.2
+}

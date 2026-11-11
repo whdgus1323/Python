@@ -1,0 +1,23 @@
+{
+  "reference_metric": "R",
+  "reference_column": "futureRerr",
+  "reference_nonzero_median": 4.0,
+  "median_S": 2.0,
+  "unified_weight_S": 2.0,
+  "current_weight_S": 2.0,
+  "median_F": 1.0,
+  "unified_weight_F": -4.0,
+  "current_weight_F": -3.0,
+  "median_D": 282.4570007324219,
+  "unified_weight_D": -0.014161447546450772,
+  "current_weight_D": -0.02,
+  "median_R": 4.0,
+  "unified_weight_R": -1.0,
+  "current_weight_R": -1.0,
+  "median_I": 7.0,
+  "unified_weight_I": -0.5714285714285714,
+  "current_weight_I": -0.25,
+  "median_X": 1.0,
+  "unified_weight_X": -4.0,
+  "current_weight_X": -0.1
+}

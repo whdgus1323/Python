@@ -1,0 +1,238 @@
+{
+  "summary_counts": [
+    {
+      "metric": "S",
+      "column": "futureSucceeded",
+      "row_count": 31045530,
+      "nonzero_count": 26900736,
+      "nonzero_ratio": 0.8664930506903893
+    },
+    {
+      "metric": "F",
+      "column": "futureFailed",
+      "row_count": 31045530,
+      "nonzero_count": 48022,
+      "nonzero_ratio": 0.0015468249374386586
+    },
+    {
+      "metric": "D",
+      "column": "futureDelay",
+      "row_count": 31045530,
+      "nonzero_count": 26900736,
+      "nonzero_ratio": 0.8664930506903893
+    },
+    {
+      "metric": "R",
+      "column": "futureRerr",
+      "row_count": 31045530,
+      "nonzero_count": 29169765,
+      "nonzero_ratio": 0.9395801907714251
+    },
+    {
+      "metric": "I",
+      "column": "futureInvalidate",
+      "row_count": 31045530,
+      "nonzero_count": 29145661,
+      "nonzero_ratio": 0.938803782702373
+    },
+    {
+      "metric": "X",
+      "column": "futureDelete",
+      "row_count": 31045530,
+      "nonzero_count": 4910795,
+      "nonzero_ratio": 0.15818042082064632
+    }
+  ],
+  "stats": [
+    {
+      "metric": "S",
+      "column": "futureSucceeded",
+      "nonzero_count": 26900736,
+      "nonzero_median": 2.0,
+      "nonzero_mean": 2.7459664344787598,
+      "nonzero_std": 1.7136635780334473,
+      "nonzero_p25": 1.0,
+      "nonzero_p75": 4.0,
+      "nonzero_min": 1.0,
+      "nonzero_max": 11.0
+    },
+    {
+      "metric": "F",
+      "column": "futureFailed",
+      "nonzero_count": 48022,
+      "nonzero_median": 1.0,
+      "nonzero_mean": 1.0,
+      "nonzero_std": 0.0,
+      "nonzero_p25": 1.0,
+      "nonzero_p75": 1.0,
+      "nonzero_min": 1.0,
+      "nonzero_max": 1.0
+    },
+    {
+      "metric": "D",
+      "column": "futureDelay",
+      "nonzero_count": 26900736,
+      "nonzero_median": 282.4570007324219,
+      "nonzero_mean": 439.3065185546875,
+      "nonzero_std": 525.1217041015625,
+      "nonzero_p25": 147.98199462890625,
+      "nonzero_p75": 543.3820190429688,
+      "nonzero_min": 0.2585650086402893,
+      "nonzero_max": 7406.669921875
+    },
+    {
+      "metric": "R",
+      "column": "futureRerr",
+      "nonzero_count": 29169765,
+      "nonzero_median": 4.0,
+      "nonzero_mean": 4.298105239868164,
+      "nonzero_std": 2.2787468433380127,
+      "nonzero_p25": 2.0,
+      "nonzero_p75": 6.0,
+      "nonzero_min": 1.0,
+      "nonzero_max": 10.0
+    },
+    {
+      "metric": "I",
+      "column": "futureInvalidate",
+      "nonzero_count": 29145661,
+      "nonzero_median": 7.0,
+      "nonzero_mean": 7.524906635284424,
+      "nonzero_std": 4.200232982635498,
+      "nonzero_p25": 4.0,
+      "nonzero_p75": 10.0,
+      "nonzero_min": 1.0,
+      "nonzero_max": 30.0
+    },
+    {
+      "metric": "X",
+      "column": "futureDelete",
+      "nonzero_count": 4910795,
+      "nonzero_median": 1.0,
+      "nonzero_mean": 1.2381194829940796,
+      "nonzero_std": 1.1051100492477417,
+      "nonzero_p25": 1.0,
+      "nonzero_p75": 1.0,
+      "nonzero_min": 1.0,
+      "nonzero_max": 30.0
+    }
+  ],
+  "candidate_weights": [
+    {
+      "metric": "S",
+      "column": "futureSucceeded",
+      "nonzero_median": 2.0,
+      "candidate_weight_raw": 2.0,
+      "candidate_weight_round_2": 2.0,
+      "candidate_weight_round_1": 2.0,
+      "current_weight": 2.0,
+      "abs_gap_vs_current": 0.0
+    },
+    {
+      "metric": "F",
+      "column": "futureFailed",
+      "nonzero_median": 1.0,
+      "candidate_weight_raw": -4.0,
+      "candidate_weight_round_2": -4.0,
+      "candidate_weight_round_1": -4.0,
+      "current_weight": -3.0,
+      "abs_gap_vs_current": 1.0
+    },
+    {
+      "metric": "D",
+      "column": "futureDelay",
+      "nonzero_median": 282.4570007324219,
+      "candidate_weight_raw": -0.014161447546450772,
+      "candidate_weight_round_2": -0.01,
+      "candidate_weight_round_1": -0.0,
+      "current_weight": -0.02,
+      "abs_gap_vs_current": 0.005838552453549228
+    },
+    {
+      "metric": "R",
+      "column": "futureRerr",
+      "nonzero_median": 4.0,
+      "candidate_weight_raw": -1.0,
+      "candidate_weight_round_2": -1.0,
+      "candidate_weight_round_1": -1.0,
+      "current_weight": -1.0,
+      "abs_gap_vs_current": 0.0
+    },
+    {
+      "metric": "I",
+      "column": "futureInvalidate",
+      "nonzero_median": 7.0,
+      "candidate_weight_raw": -0.5714285714285714,
+      "candidate_weight_round_2": -0.57,
+      "candidate_weight_round_1": -0.6,
+      "current_weight": -0.25,
+      "abs_gap_vs_current": 0.3214285714285714
+    },
+    {
+      "metric": "X",
+      "column": "futureDelete",
+      "nonzero_median": 1.0,
+      "candidate_weight_raw": -4.0,
+      "candidate_weight_round_2": -4.0,
+      "candidate_weight_round_1": -4.0,
+      "current_weight": -0.1,
+      "abs_gap_vs_current": 3.9
+    }
+  ],
+  "contributions": [
+    {
+      "metric": "S",
+      "column": "futureSucceeded",
+      "nonzero_median": 2.0,
+      "current_weight": 2.0,
+      "current_median_contribution": 4.0,
+      "candidate_weight_raw": 2.0,
+      "candidate_median_contribution": 4.0
+    },
+    {
+      "metric": "F",
+      "column": "futureFailed",
+      "nonzero_median": 1.0,
+      "current_weight": -3.0,
+      "current_median_contribution": -3.0,
+      "candidate_weight_raw": -4.0,
+      "candidate_median_contribution": -4.0
+    },
+    {
+      "metric": "D",
+      "column": "futureDelay",
+      "nonzero_median": 282.4570007324219,
+      "current_weight": -0.02,
+      "current_median_contribution": -5.649140014648437,
+      "candidate_weight_raw": -0.014161447546450772,
+      "candidate_median_contribution": -4.0
+    },
+    {
+      "metric": "R",
+      "column": "futureRerr",
+      "nonzero_median": 4.0,
+      "current_weight": -1.0,
+      "current_median_contribution": -4.0,
+      "candidate_weight_raw": -1.0,
+      "candidate_median_contribution": -4.0
+    },
+    {
+      "metric": "I",
+      "column": "futureInvalidate",
+      "nonzero_median": 7.0,
+      "current_weight": -0.25,
+      "current_median_contribution": -1.75,
+      "candidate_weight_raw": -0.5714285714285714,
+      "candidate_median_contribution": -4.0
+    },
+    {
+      "metric": "X",
+      "column": "futureDelete",
+      "nonzero_median": 1.0,
+      "current_weight": -0.1,
+      "current_median_contribution": -0.1,
+      "candidate_weight_raw": -4.0,
+      "candidate_median_contribution": -4.0
+    }
+  ]
+}

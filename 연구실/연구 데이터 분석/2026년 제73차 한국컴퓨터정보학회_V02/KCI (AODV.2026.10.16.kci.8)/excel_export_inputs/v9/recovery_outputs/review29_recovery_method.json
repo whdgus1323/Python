@@ -1,0 +1,250 @@
+{
+  "decreased_runs": 41,
+  "inputs": [
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\aodv_control_log.csv",
+      7742977,
+      1792187940383138500
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\ping_trace_log.csv",
+      2346203,
+      1792187939096831700
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\7\\seed#3\\aodv_route_cause_events.csv",
+      9000820,
+      1792187941041119100
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\aodv_control_log.csv",
+      2586295,
+      1792187594016713800
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\ping_trace_log.csv",
+      2291071,
+      1792187580517466800
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#10\\9\\seed#2\\aodv_route_cause_events.csv",
+      3398634,
+      1792187618184751900
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#20\\3\\seed#3\\aodv_control_log.csv",
+      5860580,
+      1792190358691053200
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#20\\3\\seed#3\\ping_trace_log.csv",
+      2316186,
+      1792190357399440500
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#20\\3\\seed#3\\aodv_route_cause_events.csv",
+      6740223,
+      1792190359335503100
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#20\\3\\seed#4\\aodv_control_log.csv",
+      4100263,
+      1792190888583330900
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#20\\3\\seed#4\\ping_trace_log.csv",
+      2259729,
+      1792190881438308400
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#20\\3\\seed#4\\aodv_route_cause_events.csv",
+      5274766,
+      1792190895867953600
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#20\\7\\seed#1\\aodv_control_log.csv",
+      2435005,
+      1792189629818427500
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#20\\7\\seed#1\\ping_trace_log.csv",
+      2178983,
+      1792189628536886500
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#20\\7\\seed#1\\aodv_route_cause_events.csv",
+      2846145,
+      1792189630745312900
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#30\\2\\seed#3\\aodv_control_log.csv",
+      6793392,
+      1792193338549990100
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#30\\2\\seed#3\\ping_trace_log.csv",
+      2581417,
+      1792193337252237800
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#70\\v#30\\2\\seed#3\\aodv_route_cause_events.csv",
+      8436568,
+      1792193339247961000
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#10\\0\\seed#1\\aodv_control_log.csv",
+      8540074,
+      1792195246530685200
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#10\\0\\seed#1\\ping_trace_log.csv",
+      2247946,
+      1792195243508581100
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#10\\0\\seed#1\\aodv_route_cause_events.csv",
+      9673443,
+      1792195247442052200
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#10\\3\\seed#5\\aodv_control_log.csv",
+      2476013,
+      1792197545355341300
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#10\\3\\seed#5\\ping_trace_log.csv",
+      2325198,
+      1792197543512197200
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#10\\3\\seed#5\\aodv_route_cause_events.csv",
+      3504962,
+      1792197546395012300
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#10\\4\\seed#2\\aodv_control_log.csv",
+      5838509,
+      1792195900775054300
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#10\\4\\seed#2\\ping_trace_log.csv",
+      2500607,
+      1792195900705791100
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#10\\4\\seed#2\\aodv_route_cause_events.csv",
+      7887488,
+      1792195901683919600
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#10\\7\\seed#1\\aodv_control_log.csv",
+      8300753,
+      1792195248206576800
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#10\\7\\seed#1\\ping_trace_log.csv",
+      2277168,
+      1792195246506472400
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#10\\7\\seed#1\\aodv_route_cause_events.csv",
+      10488254,
+      1792195277330400200
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#30\\7\\seed#3\\aodv_control_log.csv",
+      1238324,
+      1792204377515071800
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#30\\7\\seed#3\\ping_trace_log.csv",
+      2169158,
+      1792204376174378100
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#30\\7\\seed#3\\aodv_route_cause_events.csv",
+      2050417,
+      1792204378180317400
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#30\\9\\seed#5\\aodv_control_log.csv",
+      5123062,
+      1792206291823917100
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#30\\9\\seed#5\\ping_trace_log.csv",
+      2349957,
+      1792206291583238000
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#100\\v#30\\9\\seed#5\\aodv_route_cause_events.csv",
+      6388706,
+      1792206291988514500
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#10\\0\\seed#4\\aodv_control_log.csv",
+      6892300,
+      1792209771890065500
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#10\\0\\seed#4\\ping_trace_log.csv",
+      2279328,
+      1792209770601834900
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#10\\0\\seed#4\\aodv_route_cause_events.csv",
+      9199899,
+      1792209772551649000
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#10\\1\\seed#2\\aodv_control_log.csv",
+      2468600,
+      1792206784507600800
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#10\\1\\seed#2\\ping_trace_log.csv",
+      2235503,
+      1792206783306170700
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#10\\1\\seed#2\\aodv_route_cause_events.csv",
+      3920908,
+      1792206785023771000
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#10\\9\\seed#2\\aodv_control_log.csv",
+      2997825,
+      1792207591365868300
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#10\\9\\seed#2\\ping_trace_log.csv",
+      2188262,
+      1792207589784121300
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#10\\9\\seed#2\\aodv_route_cause_events.csv",
+      4835900,
+      1792207592017376400
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#10\\9\\seed#5\\aodv_control_log.csv",
+      1718822,
+      1792210751095176200
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#10\\9\\seed#5\\ping_trace_log.csv",
+      2149754,
+      1792210749783395700
+    ],
+    [
+      "D:\\CBP_2026.10.17\\i#1\\full\\full#44, 101_43, 101_result\\q_sweep\\d#120\\v#10\\9\\seed#5\\aodv_route_cause_events.csv",
+      3123003,
+      1792210751743213600
+    ]
+  ],
+  "first_selection": "First logged selection for the same origin and destination after a blocked context starts, including later retries.",
+  "active_entry_interval": "First subsequent inactive event for that route entry; changes between active routes are retained. It is table-entry availability, not end-to-end path stability.",
+  "censoring": "No selection by 100 s is unrecovered in-window; no following invalidation is right-censored and excluded from completed-interval medians.",
+  "reply_linkage": "Reply outcomes use the original saved source-attempt windows. Return-direction contexts are not assigned to individual Ping sequences.",
+  "classification": "Observed reacquisition and route-entry continuity; no packet-specific radio-drop attribution."
+}

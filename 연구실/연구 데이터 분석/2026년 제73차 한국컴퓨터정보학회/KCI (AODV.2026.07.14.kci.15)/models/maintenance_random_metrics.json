@@ -1,0 +1,193 @@
+{
+  "task": "maintenance",
+  "dataset": "D:\\Github\\Python\\\uc5f0\uad6c\uc2e4\\\uc5f0\uad6c \ub370\uc774\ud130 \ubd84\uc11d\\2026\ub144 \uc81c73\ucc28 \ud55c\uad6d\ucef4\ud4e8\ud130\uc815\ubcf4\ud559\ud68c\\KCI (AODV.2026.07.14.kci.15)\\data\\aodv_maintenance_training_dataset_v2.csv",
+  "split_mode": "random",
+  "rows": 3784,
+  "label_counts": {
+    "0": 3575,
+    "1": 209
+  },
+  "train_rows": 2648,
+  "test_rows": 1136,
+  "test_label_counts": {
+    "0": 1073,
+    "1": 63
+  },
+  "average_precision": 0.970300558495003,
+  "roc_auc": 0.9990680335507922,
+  "confusion_matrix": [
+    [
+      1055,
+      18
+    ],
+    [
+      0,
+      63
+    ]
+  ],
+  "classification_report": {
+    "0": {
+      "precision": 1.0,
+      "recall": 0.983224603914259,
+      "f1-score": 0.9915413533834586,
+      "support": 1073.0
+    },
+    "1": {
+      "precision": 0.7777777777777778,
+      "recall": 1.0,
+      "f1-score": 0.875,
+      "support": 63.0
+    },
+    "accuracy": 0.9841549295774648,
+    "macro avg": {
+      "precision": 0.8888888888888888,
+      "recall": 0.9916123019571295,
+      "f1-score": 0.9332706766917294,
+      "support": 1136.0
+    },
+    "weighted avg": {
+      "precision": 0.9876760563380281,
+      "recall": 0.9841549295774648,
+      "f1-score": 0.985078232553214,
+      "support": 1136.0
+    }
+  },
+  "threshold_table": [
+    {
+      "threshold": 0.5,
+      "precision": 0.7777777777777778,
+      "recall": 1.0,
+      "f1": 0.8750000000000001,
+      "predicted_positive": 81
+    },
+    {
+      "threshold": 0.3,
+      "precision": 0.5833333333333334,
+      "recall": 1.0,
+      "f1": 0.7368421052631579,
+      "predicted_positive": 108
+    },
+    {
+      "threshold": 0.2,
+      "precision": 0.5338983050847458,
+      "recall": 1.0,
+      "f1": 0.696132596685083,
+      "predicted_positive": 118
+    },
+    {
+      "threshold": 0.1,
+      "precision": 0.3298429319371728,
+      "recall": 1.0,
+      "f1": 0.4960629921259843,
+      "predicted_positive": 191
+    },
+    {
+      "threshold": 0.05,
+      "precision": 0.2971698113207547,
+      "recall": 1.0,
+      "f1": 0.45818181818181813,
+      "predicted_positive": 212
+    }
+  ],
+  "feature_names": [
+    "acceptedHopCount",
+    "externalId",
+    "localCbr",
+    "neighborCount",
+    "bdStationCount",
+    "vehicleSpeedKmh",
+    "networkNodeCount",
+    "rreqReceiveSpeedAvgKmh",
+    "rreqReceiveSpeedMinKmh",
+    "rreqReceiveSpeedMaxKmh",
+    "rreqReceiveSpeedP05Kmh",
+    "rreqReceiveSpeedP10Kmh",
+    "rreqReceiveSpeedP95Kmh",
+    "originatedRreqCount",
+    "originatedRerrCount",
+    "rrepAckReceivedCount",
+    "routeDiscoveryStartedCount",
+    "managedRouteCount",
+    "activeRouteCount",
+    "precursorSum",
+    "rerrGeneratedCount",
+    "rerrUnreachableSum",
+    "rerrPrecursorSum"
+  ],
+  "excluded_features": [
+    "dataRouteMissCount",
+    "dataRouteUseCount",
+    "macAckReceivedCount",
+    "nodeIndex",
+    "rerrReceivedCount",
+    "routeDiscoveryFailedCount",
+    "routeDiscoverySucceededCount",
+    "rrepAllowedCount",
+    "rrepBlockedCount",
+    "rrepCandidateCount",
+    "rrepReceivedCount",
+    "rreqReceivedCount"
+  ],
+  "top_features": [
+    {
+      "feature": "activeRouteCount",
+      "score": 6.610714783243551
+    },
+    {
+      "feature": "managedRouteCount",
+      "score": 5.6073218293544445
+    },
+    {
+      "feature": "rerrPrecursorSum",
+      "score": 4.845373959803657
+    },
+    {
+      "feature": "precursorSum",
+      "score": 4.109877418036236
+    },
+    {
+      "feature": "routeDiscoveryStartedCount",
+      "score": 1.0644850118635343
+    },
+    {
+      "feature": "originatedRreqCount",
+      "score": 1.0471161220781933
+    },
+    {
+      "feature": "originatedRerrCount",
+      "score": 0.45226950546102335
+    },
+    {
+      "feature": "rerrUnreachableSum",
+      "score": 0.19910111031802588
+    },
+    {
+      "feature": "localCbr",
+      "score": 0.1812670516691384
+    },
+    {
+      "feature": "neighborCount",
+      "score": 0.13055192171691196
+    },
+    {
+      "feature": "bdStationCount",
+      "score": 0.13055192171691196
+    },
+    {
+      "feature": "rerrGeneratedCount",
+      "score": 0.0661674282642306
+    },
+    {
+      "feature": "rreqReceiveSpeedMaxKmh",
+      "score": 0.06141233636201725
+    },
+    {
+      "feature": "rreqReceiveSpeedP95Kmh",
+      "score": 0.06141233636201725
+    },
+    {
+      "feature": "rreqReceiveSpeedP10Kmh",
+      "score": 0.06141233636201725
+    }
+  ]
+}

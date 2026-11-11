@@ -1,0 +1,7 @@
+statistic	value
+minimum	0.0
+q1	18.984372
+median	31.279995
+q3	42.215729
+maximum	100.0
+candidate_count	463853.0

@@ -1,0 +1,32 @@
+[
+  {
+    "file": "D:\\Github\\Python\\연구실\\연구 데이터 분석\\2026년 제73차 한국컴퓨터정보학회_V02\\KCI (AODV.2026.09.15.kci.2)\\result\\collision_template\\Collision_Result_RREQ_request.xlsx",
+    "verified_cells": 3456,
+    "template_sha256": "57d4f29d520fd731fc594f7944d1076451840863ea443834bb5e9f6853e631f0"
+  },
+  {
+    "file": "D:\\Github\\Python\\연구실\\연구 데이터 분석\\2026년 제73차 한국컴퓨터정보학회_V02\\KCI (AODV.2026.09.15.kci.2)\\result\\collision_template\\Collision_Result_RREQ_reply.xlsx",
+    "verified_cells": 3456,
+    "template_sha256": "57d4f29d520fd731fc594f7944d1076451840863ea443834bb5e9f6853e631f0"
+  },
+  {
+    "file": "D:\\Github\\Python\\연구실\\연구 데이터 분석\\2026년 제73차 한국컴퓨터정보학회_V02\\KCI (AODV.2026.09.15.kci.2)\\result\\collision_template\\Collision_Result_RREP_request.xlsx",
+    "verified_cells": 3456,
+    "template_sha256": "57d4f29d520fd731fc594f7944d1076451840863ea443834bb5e9f6853e631f0"
+  },
+  {
+    "file": "D:\\Github\\Python\\연구실\\연구 데이터 분석\\2026년 제73차 한국컴퓨터정보학회_V02\\KCI (AODV.2026.09.15.kci.2)\\result\\collision_template\\Collision_Result_RREP_reply.xlsx",
+    "verified_cells": 3456,
+    "template_sha256": "57d4f29d520fd731fc594f7944d1076451840863ea443834bb5e9f6853e631f0"
+  },
+  {
+    "file": "D:\\Github\\Python\\연구실\\연구 데이터 분석\\2026년 제73차 한국컴퓨터정보학회_V02\\KCI (AODV.2026.09.15.kci.2)\\result\\collision_template\\Collision_Result_RREQ + RREP_request.xlsx",
+    "verified_cells": 3456,
+    "template_sha256": "57d4f29d520fd731fc594f7944d1076451840863ea443834bb5e9f6853e631f0"
+  },
+  {
+    "file": "D:\\Github\\Python\\연구실\\연구 데이터 분석\\2026년 제73차 한국컴퓨터정보학회_V02\\KCI (AODV.2026.09.15.kci.2)\\result\\collision_template\\Collision_Result_RREQ + RREP_reply.xlsx",
+    "verified_cells": 3456,
+    "template_sha256": "57d4f29d520fd731fc594f7944d1076451840863ea443834bb5e9f6853e631f0"
+  }
+]

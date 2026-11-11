@@ -1,0 +1,26 @@
+{
+  "selection_note": "teacher-first selection inside regressability-feasible set",
+  "target_coeff": [
+    2.0,
+    3.0,
+    0.02,
+    1.0,
+    0.25,
+    0.1
+  ],
+  "selected_aS": 2.0,
+  "selected_aF": 3.0,
+  "selected_aD": 0.02,
+  "selected_aR": 1.0,
+  "selected_aI": 0.25,
+  "selected_aX": 0.1,
+  "selected_teacher_states": 166,
+  "selected_unique_pairs": 399,
+  "selected_max_selected_pair_share": 0.04819277108433735,
+  "selected_mean_score_gap_1_2": 1.1318433284759521,
+  "selected_state_r2_uniform": 0.7882611453533173,
+  "selected_stage1_rank": 4,
+  "selected_row_r2_uniform": 0.7145749032497406,
+  "selected_regressability_feasible": true,
+  "target_match": true
+}

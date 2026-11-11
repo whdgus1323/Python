@@ -1,0 +1,5 @@
+range_index	range_label	lower_threshold	upper_threshold	candidate_count	candidate_ratio_percent
+1	R1: 0 < CBP < 19	0	19	86177	24.44973415875574
+2	R2: 19 < CBP < 32	19	32	92505	26.245084632276587
+3	R3: 32 < CBP < 43	32	43	88339	25.063126656188118
+4	R4: 43 < CBP < 101	43	101	83206	23.606815976576463

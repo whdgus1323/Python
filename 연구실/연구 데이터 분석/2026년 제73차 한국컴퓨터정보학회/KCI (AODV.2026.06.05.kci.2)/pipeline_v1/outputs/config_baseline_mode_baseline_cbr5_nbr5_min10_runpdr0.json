@@ -1,0 +1,8 @@
+{
+  "experiment_name": "mode_baseline_cbr5_nbr5_min10_runpdr0",
+  "state_cbr_bin_size": 5.0,
+  "state_neighbor_bin_size": 5.0,
+  "min_pair_samples_per_state": 10,
+  "include_run_pdr_in_label": false,
+  "test_size": 0.25
+}

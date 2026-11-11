@@ -1,0 +1,10 @@
+{
+  "train_rows": 171294,
+  "valid_rows": 32093,
+  "test_rows": 33755,
+  "unique_states": 400,
+  "num_classes": 6,
+  "observed_policy_pairs": 6,
+  "lookup_rows": 3087,
+  "lookup_unique_pairs": 6
+}
